@@ -36,7 +36,9 @@
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/regular";
 @import "vendor/font-awesome/brands";
+@import "vendor/font-awesome/v4-shims";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
@@ -49,33 +51,62 @@
     padding-right: 0 !important;
   }
 }
-/* ====================================================
-   响应式调整：手机端图在上(居中)、字在下(左对齐)，不影响电脑端 
-   ==================================================== */
-@media screen and (max-width: 768px) {
-  /* 1. 强制改为纵向排布 */
-  .publication-card > div[style*="display: flex"] {
-    flex-direction: column !important;
-    align-items: flex-start !important; /* 保持文字靠左对齐，阅读体验更好 */
-  }
 
-  /* 2. 调整图片外层容器 (.pub-media-rotator) 并让其单独居中 */
-  .publication-card .pub-media-rotator {
-    align-self: center !important;   /* 【核心修改】让图片在这个列中单独居中 */
-    margin-right: 0 !important;      /* 取消原来的右边距 */
-    margin-bottom: 15px !important;  /* 增加下边距，隔开文字 */
-    width: 100% !important;          
-    max-width: 320px !important;     /* 限制图片最大宽度 */
-    height: auto !important;         
-    flex: none !important;           
-  }
+/* Keep Font Awesome icons on the icon font even when site typography overrides <i>. */
+.fa,
+.fas,
+.fa-solid,
+.far,
+.fa-regular {
+  font-family: "Font Awesome 6 Free" !important;
+}
 
-  /* 3. 调整内部图片尺寸 */
-  .publication-card .pub-media-rotator img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 180px !important;    
-    object-fit: contain !important;
-    margin: 0 auto !important;       /* 确保图片本身在容器内部也居中 */
-  }
+.fab,
+.fa-brands {
+  font-family: "Font Awesome 6 Brands" !important;
+}
+
+.fa,
+.fas,
+.fa-solid {
+  font-weight: 900 !important;
+}
+
+.far,
+.fa-regular,
+.fab,
+.fa-brands {
+  font-weight: 400 !important;
+}
+
+/* Tighten the gap between the last content section and the footer. */
+body {
+  padding-bottom: 0;
+}
+
+.page__footer {
+  position: static;
+  bottom: auto;
+  margin-top: 1.5em;
+}
+
+.page__footer footer {
+  margin-top: 1.25em;
+  padding-bottom: 1.5em;
+}
+
+.author__urls a.is-copied {
+  color: #3d7d4f !important;
+}
+.sidebar .author__name {
+  transform: translateX(60px);
+}
+.sidebar .author__avatar {
+  transform: translateX(-5px);
+}
+.sidebar .author__bio {
+  transform: translateX(10px);
+}
+.sidebar .author__urls {
+  transform: translateX(25px);
 }

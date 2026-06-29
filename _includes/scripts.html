@@ -27,6 +27,43 @@
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') closeAll();
     });
+
+    document.querySelectorAll('.js-copy-email').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var email = link.getAttribute('data-email');
+        if (!email) return;
+
+        function showCopied() {
+          var oldText = link.getAttribute('data-original-text') || link.textContent.trim();
+          link.setAttribute('data-original-text', oldText);
+          link.classList.add('is-copied');
+          link.lastChild.textContent = ' 已复制';
+
+          window.clearTimeout(link._copyTimer);
+          link._copyTimer = window.setTimeout(function() {
+            link.classList.remove('is-copied');
+            link.lastChild.textContent = oldText;
+          }, 1600);
+        }
+
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(email).then(showCopied);
+        } else {
+          var textarea = document.createElement('textarea');
+          textarea.value = email;
+          textarea.setAttribute('readonly', '');
+          textarea.style.position = 'fixed';
+          textarea.style.left = '-9999px';
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+          showCopied();
+        }
+      });
+    });
   }
 
   if (document.readyState === 'loading') {

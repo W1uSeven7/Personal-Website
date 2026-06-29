@@ -4,9 +4,18 @@ _site/
 # Ignore the directory for local files during development
 local/
 
+# Ignore local IDE/editor/cache files
+.vs/
+.bundle/
+.codex/
+.agents/
+
 # Ignore the Gemfile that is generated
 Gemfile.lock
 
 # Ingore files created by npm
 node_modules
 package-lock.json
+
+# Ignore locally installed Ruby gems
+vendor/bundle/

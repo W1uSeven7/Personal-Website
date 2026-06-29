@@ -7,315 +7,212 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<h1 class="main-heading">Hi there <img src="images/Hi.gif" width="40px"> Welcome to my Homepage!</h1>
+<h1 class="main-heading">你好<img src="images/Hi.gif" width="40px"> 欢迎来到我的主页！</h1>
 
-Hi! I work on AI, survive on instant noodles, and submit papers 3 minutes before deadlines.
+Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业（2023-2027）
 
-Feel free to reach out if you are interested in collaboration or potential opportunities.
+我正在寻找AI产品岗位的实习机会，我对 VibeCoding 驱动的AI产品创新非常感兴趣。借助 Codex、Cursor 等工具，产品经理能够快速完成原型验证、功能开发和用户测试，大幅缩短从想法到产品上线的周期。我希望参与这样的团队，见证并推动产品从 0 到 1 的全过程。
 
-News
----------------
+<div id="news" class="section-anchor"></div>
+<h2>最新动态</h2>
 <div class="news-box">
   <ul class="news-list">
 
-<li><span class="news-date"><em>2026.10</em></span> 🚀🚀 Submitted a paper 3 minutes before the deadline.</li>
+<li><span class="news-date"><em>2026.06</em></span> 🌟🌟 基金收益突破2k.</li>
 
-<li><span class="news-date"><em>2025.12</em></span> 😅😅 Unexpectedly got fired.</li>
-<li><span class="news-date"><em>2026.09</em></span> 📉📉 My GPU resigned before I did.</li>
-<li><span class="news-date"><em>2026.08</em></span> ☕☕ Survived on coffee for 72 consecutive hours.</li>
+<li><span class="news-date"><em>2026.05</em></span> 📱📱 合作完成校园二手交易微信小程序，从产品设计到开发落地，实现第一个完整 MVP.</li>
 
-<li><span class="news-date"><em>2026.05</em></span> 🎉🎉 I begin my internship at Weijia.</li>
-<li><span class="news-date"><em>2025.12</em></span> 😅😅 Unexpectedly got fired.</li>
+<li><span class="news-date"><em>2026.04</em></span> 📈📈 第一次接触基金理财，开始学习长期投资与资产配置.</li>
 
-<li><span class="news-date"><em>2026.07</em></span> 🎉🎉 Promoted from intern to “experienced intern”.</li>
-<li><span class="news-date"><em>2026.06</em></span> 🤡🤡 Accidentally deleted the production database.</li>
+<li><span class="news-date"><em>2026.01</em></span> 💼💼 来到上海兼职，深入教育行业，探索AI+教育方向的可能性.</li>
 
-<li><span class="news-date"><em>2026.05</em></span> 🎉🎉 I begin my internship at Haidilao.</li>
-<li><span class="news-date"><em>2025.12</em></span> 😅😅 Unexpectedly got fired.</li>
+<li><span class="news-date"><em>2025.09</em></span> 🌎🌎 在 UCSD 开启交换生活，看见更大的世界.</li>
 
-<li><span class="news-date"><em>2024.10</em></span> 🎉🎉 I began my studies at MIT.</li>
+<li><span class="news-date"><em>2025.08</em></span> 🤖🤖 基于 Cursor、ChatGPT开发自动化广告投放系统，第一次真正感受到 AI 改变开发方式.</li>
+
+<li><span class="news-date"><em>2025.07</em></span> 💻💻 开启 AI 产品实习，正式接触 Vibe Coding，开始探索产品开发的新范式.</li>
+
+<li><span class="news-date"><em>2025.02</em></span> 🎮🎮 完成俄罗斯方块小游戏开发，独立实现游戏逻辑、界面设计与数据存储.</li>
+
+<li><span class="news-date"><em>2024.06</em></span> ❤️❤️ 开启人生第一段恋爱，也学会了爱与成长.</li>
+
+<li><span class="news-date"><em>2023.09</em></span> 🌱🌱 一切故事，从西南大学开始.</li>
   </ul>
 </div>
 
-Experience
---------------
+<div id="experience" class="section-anchor"></div>
+<h2>教育/实习经历</h2>
 
 <div class="experience-container">
 
   <div class="experience-card">
-      <img src="images/haidilao.png" alt="Haidilao logo" class="experience-logo">
+      <img src="images/ucsd.jpg" alt="Haidilao logo" class="experience-logo">
       <div class="experience-info">
-          <strong>Haidilao</strong><br>
-          <em>2026.05 - Present</em><br>
-          LLM Engineer Intern advised by <a href="https://wd7ang.github.io/"><em>Weidong Tang</em></a><br>
-          <span style="color:#888;">Main contribution: teaching hotpot robots to understand human emotions.</span>
+          <strong>加州大学圣地亚哥分校（UCSD）</strong><br>
+          <em>2025.09 - 2025.12</em><br>
+          交换生<br>
+          <span style="color:#888;">课程：机器学习、软件工程、人工智能搜索与推理.</span>
       </div>
   </div>
 
   <div class="experience-card">
-      <img src="images/weijia.png" alt="Weijia logo" class="experience-logo">
+      <img src="images/JOJO.jpg" alt="Weijia logo" class="experience-logo">
       <div class="experience-info">
-          <strong>Weijia</strong><br>
-          <em>2026.01 - 2026.03</em><br>
-          Machine Learning Intern advised by <a href="https://selen-suyue.github.io/"><em>Yue Su</em></a><br>
-          <span style="color:#888;">Successfully reduced GPU happiness by 97%.</span>
+          <strong>叫叫阅读</strong><br>
+          <em>2025.07 - 2025.09</em><br>
+         AI产品实习生<br>
+          <span style="color:#888;">借助Codex与Cursor设计自动化广告投放系统，构建广告投放全流程自动化，将操作时间缩短至秒级.</span>
       </div>
   </div>
 
   <div class="experience-card">
-      <img src="images/mit.png" alt="MIT logo" class="experience-logo">
+      <img src="images/swu.png" alt="MIT logo" class="experience-logo">
       <div class="experience-info">
-          <strong>Massachusetts Institute of Technology</strong><br>
-          <em>2023.09 - Present</em><br>
-          Rank 5/99, B.E at <a href="https://ste.xidian.edu.cn/"><em>School of Telecommunication Engineering</em></a><br>
-          <span style="color:#888;">Research interests include large models, multimodal learning, and surviving deadlines.</span>
+          <strong>西南大学</strong><br>
+          <em>2023.09 - 至今</em><br>
+          GPA:3.96/5, Rank:10/156; 在商贸学院攻读管理学学位<br>
+          <span style="color:#888;">课程：数据库应用与实践，Python数据分析与编程，Web前端开发，管理信息系统.</span>
       </div>
   </div>
 </div>
 
 
-Publications
---------------
-<button class="pub-button active" onclick="filterPublications(event, 'all')">Core Publications</button>
-<button class="pub-button" onclick="filterPublications(event, 'list')">Full Publications List</button>
-
-(* equal contribution · &dagger; corresponding author · &Dagger; project leader)
-
-<div id="core-publications" class="publication-view" data-publication-view="core">
-<div class="publication-card" data-category="all"> 
-  <div style="display: flex; align-items: center;">
-    <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;"> 
-      <img src="images/sleep.png" alt="wog" style="width: 320px; height: 180px; object-fit: contain; display: block; margin: 0 auto;"> 
-    </div> 
-    <div>
-      <strong>SleepFormer: Towards Fully Autonomous Deadline Extension via Large Language Models</strong><br>
-      <i style="font-size: 13px;">
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang</strong>
-        </a>,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su&dagger;</strong>
-        </a>.
-      </i><br> 
-      We present SleepFormer, the first framework capable of automatically generating convincing excuses for missed deadlines, skipped meetings, and unfinished experiments.
-      <br> 
-      <b><i style="color:#83a1c7;">ACL 3026 Oral &nbsp;
-      </i></b> 
-      <a href=""><em>[arXiv]</em></a> 
-      <a href=""><em>[code]</em></a> 
-    </div>
-  </div> 
-</div>
-
-
-<div class="publication-card" data-category="all"> 
-  <div style="display: flex; align-items: center;">
-    <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;"> 
-      <img src="images/gpu.png" alt="wog" style="width: 320px; height: 180px; object-fit: contain; display: block; margin: 0 auto;"> 
-    </div> 
-    <div>
-      <strong>Are GPUs Emotionally Stable? A Large-Scale Empirical Study Under 24/7 Training Stress</strong><br>
-      <i style="font-size: 13px;">
-        NVIDIA RTX 9090*,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su*</strong>
-        </a>,
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang&dagger;</strong>
-        </a>.
-      </i><br> 
-      We conduct the first psychological evaluation of modern GPUs under extreme training conditions. Results reveal that 87% of devices exhibit symptoms of burnout after repeated “just one more epoch” requests.
-      <br> 
-      <b><i style="color:#83a1c7;">ICLR 3026 &nbsp;
-      </i></b> 
-      <a href=""><em>[arXiv]</em></a> 
-      <a href=""><em>[code]</em></a> 
-    </div>
-  </div> 
-</div>
-
-<div class="publication-card" data-category="all"> 
-  <div style="display: flex; align-items: center;">
-    <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;"> 
-      <img src="images/noodle.png" alt="wog" style="width: 320px; height: 180px; object-fit: contain; display: block; margin: 0 auto;"> 
-    </div> 
-    <div>
-      <strong>Instant Noodles as a Scalable Training Infrastructure for Graduate Students</strong><br>
-      <i style="font-size: 13px;">
-        Noodles&Dagger;,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su*</strong>
-        </a>,
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang&dagger;</strong>
-        </a>.
-      </i><br> 
-      We introduce Noodle-Scaling Law, showing that research productivity increases logarithmically with instant noodle consumption before collapsing catastrophically at 3 a.m.
-      <br> 
-      <b><i style="color:#83a1c7;">ICML 3026 &nbsp;
-      </i></b> 
-      <a href=""><em>[arXiv]</em></a> 
-      <a href=""><em>[code]</em></a> 
-    </div>
-  </div> 
-</div>
-
-</div>
-
-
-<div id="full-publications" class="publication-view" data-publication-view="list" hidden>
-  <ul class="full-publication-list">
-    <li>
-      <span class="pub-list-badge">ACL 3030</span>
-      <span class="pub-list-title">SleepFormer v5: Towards Fully Autonomous Deadline Extension via Large Language Models</span><br>
-      <span class="pub-list-authors">
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang</strong>
-        </a>,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-note">Oral.</span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-    <li>
-      <span class="pub-list-badge">ACL 3029</span>
-      <span class="pub-list-title">SleepFormer v4: Towards Fully Autonomous Deadline Extension via Large Language Models</span><br>
-      <span class="pub-list-authors">
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang</strong>
-        </a>,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-note">Oral.</span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-    <li>
-      <span class="pub-list-badge">ACL 3028</span>
-      <span class="pub-list-title">SleepFormer v3: Towards Fully Autonomous Deadline Extension via Large Language Models</span><br>
-      <span class="pub-list-authors">
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang</strong>
-        </a>,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-note">Oral.</span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-    <li>
-      <span class="pub-list-badge">ACL 3027</span>
-      <span class="pub-list-title">SleepFormer v2: Towards Fully Autonomous Deadline Extension via Large Language Models</span><br>
-      <span class="pub-list-authors">
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang</strong>
-        </a>,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-note">Oral.</span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-    <li>
-      <span class="pub-list-badge">ACL 3026</span>
-      <span class="pub-list-title">SleepFormer: Towards Fully Autonomous Deadline Extension via Large Language Models</span><br>
-      <span class="pub-list-authors">
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang</strong>
-        </a>,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-note">Oral.</span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-    <li>
-      <span class="pub-list-badge">ICLR 3026</span>
-      <span class="pub-list-title">Are GPUs Emotionally Stable? A Large-Scale Empirical Study Under 24/7 Training Stress</span><br>
-      <span class="pub-list-authors">
-        NVIDIA RTX 9090*,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su*</strong>
-        </a>,
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-    <li>
-      <span class="pub-list-badge">ICLR 3026</span>
-      <span class="pub-list-title">Instant Noodles as a Scalable Training Infrastructure for Graduate Students</span><br>
-      <span class="pub-list-authors">
-        Noodles&Dagger;,
-        <a href="https://selen-suyue.github.io/" target="_blank">
-          <strong>Yue Su*</strong>
-        </a>,
-        <a href="https://wd7ang.github.io" target="_blank">
-          <strong>Weidong Tang&dagger;</strong>
-        </a>.
-      </span>
-      <span class="pub-list-links"><a href="">[arXiv]</a><a href="">[code]</a></span>
-    </li>
-  </ul>
-</div>
-
-<script src="assets/js/show_publications.js"></script>
-<script src="assets/js/pub_media_rotator.js"></script>
-
-
-Projects
---------
+<div id="projects" class="section-anchor"></div>
+<h2>项目经历</h2>
 <div class="project-card" data-category="project"> 
   <div style="display: flex; align-items: center;">
-    <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;">
-      <img src="images/2.png" alt="ManiUniCon" style="width: 320px; height: 180px; object-fit: contain; display: block; margin: 0 auto;">
+    <div class="pub-media-rotator project-media" data-interval="4000">
+      <img src="images/CampusX.png" alt="校园二手交易小程序截图">
     </div>
     <div> 
-      <strong>WowPage</strong><br>
-      <i style="font-size: 13px;">
-        <a href="https://wd7ang.github.io" target="_blank"><strong>Weidong Tang</strong></a>,
-        <a href="https://selen-suyue.github.io/" target="_blank"><strong>Yue Su</strong></a>.
-      </i><br>
-      In collaboration with Yue Su, I refined and improved his original homepage template. A clean standalone template version is coming soon.
+      <strong>校园二手交易小程序</strong><br>
+      <div class="project-author">
+        成员：
+        <a href="https://github.com/W1uSeven7" target="_blank"><strong>吴琦</strong></a>,
+        <a href="https://github.com/xiaoxiaoyuweixie" target="_blank"><strong>肖瑞航</strong></a>.
+      </div>
+      和肖瑞航一起合作，完成从问卷调研—需求文档编写—原型设计—界面开发—用户内测—功能迭代这个从0到1的过程，并在不断完善中，为后续的正式上线做准备。
       <br> 
       <b><i style="color:#83a1c7;">Project &nbsp;</i></b> 
-      <a href=""><em>[code]</em></a> 
+      <a href="https://github.com/xiaoxiaoyuweixie/CampusX"><em>[code]</em></a> 
+    </div>
+  </div> 
+</div>
+
+<div class="project-card" data-category="project"> 
+  <div style="display: flex; align-items: center;">
+    <div class="pub-media-rotator project-media" data-interval="4000">
+      <img src="images/Tetirs.png" alt="新版俄罗斯方块小游戏截图">
+    </div>
+    <div> 
+      <strong>新版俄罗斯方块小游戏</strong><br>
+      <div class="project-author">
+        成员：
+        <a href="https://github.com/W1uSeven7" target="_blank"><strong>吴琦</strong></a>.
+      </div>
+      一个基于 Pygame 开发的俄罗斯方块项目，支持登录注册、排行榜、无尽模式、限时模式、双人对战和人机对战（AI）。
+      <br> 
+      <b><i style="color:#83a1c7;">Project &nbsp;</i></b> 
+      <a href="http://github.com/W1uSeven7/New-Tetris"><em>[code]</em></a> 
     </div>
   </div> 
 </div>
 
 
-Awards
---------
-- *3026.01*, Successfully survived 17 consecutive paper deadlines without touching grass.
-- *3025.09*, Best Excuse Generation Award, SleepFormer Research Group.
-- *3025.06*, Outstanding Contributor to Instant Noodle Consumption Efficiency.
-- *3024.12*, GPU Emotional Damage Scholarship (Full Funding).
-- *3024.08*, Ranked Top 0.1% Worldwide in “I’ll Fix It Tomorrow”.
+<div id="awards" class="section-anchor"></div>
+<h2>荣誉奖项</h2>
+<div class="award-grid">
+  <div class="award-card award-card--highlight">
+    <div class="award-icon">🏆</div>
+    <div class="award-content">
+      <span class="award-date">2024.12</span>
+      <strong>国家奖学金</strong>
+      <p>国家级荣誉奖项</p>
+    </div>
+  </div>
+  <div class="award-card">
+    <div class="award-icon">⭐</div>
+    <div class="award-content">
+      <span class="award-date">2025.12</span>
+      <strong>西南大学一等奖学金</strong>
+      <p>校级奖学金</p>
+    </div>
+  </div>
+  <div class="award-card">
+    <div class="award-icon">🎖️</div>
+    <div class="award-content">
+      <span class="award-date">2025.12</span>
+      <strong>西南大学“三好学生”</strong>
+      <p>综合荣誉称号</p>
+    </div>
+  </div>
+  <div class="award-card">
+    <div class="award-icon">💻</div>
+    <div class="award-content">
+      <span class="award-date">2025.04</span>
+      <strong>蓝桥杯 C++ 赛道重庆市二等奖</strong>
+      <p>程序设计竞赛</p>
+    </div>
+  </div>
+</div>
 
+<div id="services" class="section-anchor"></div>
+<h2>学生服务</h2>
+<div class="service-timeline">
+  <div class="service-item">
+    <span class="service-date">2024.09 – 2025.09</span>
+    <div class="service-content">
+      <strong>西南大学创新创业部部长</strong>
+      <p>参与组织创新创业相关活动，推动学生项目交流与落地。</p>
+    </div>
+  </div>
+  <div class="service-item">
+    <span class="service-date">2024.09 – 2025.09</span>
+    <div class="service-content">
+      <strong>2024级管理科学与工程专业班级助理</strong>
+      <p>协助新生适应大学学习生活，承担班级沟通与事务支持工作。</p>
+    </div>
+  </div>
+  <div class="service-item">
+    <span class="service-date">2023.09 – 2024.09</span>
+    <div class="service-content">
+      <strong>班级志愿服务委员</strong>
+      <p>负责志愿服务信息对接与活动组织，支持班级公共事务。</p>
+    </div>
+  </div>
+</div>
 
-
-Services
---------
-- *3026.06 – Present*, Chief Coffee Consumption Officer, Midnight Research Lab.
-- *3026.01 – Present*, Full-time Debugger of Problems Created by Myself.
-- Reviewer for Journal of Unfinished Projects.
-- Area Chair for Conference on Last-Minute Submissions (CLMS).
-- Volunteer Therapist for Burned-out GPUs.
-
-
-
-Talks
---------
-- *3026.07*, “How to Finish a Paper 3 Minutes Before Deadline.”
-- *3026.05*, “Large Language Models and Large Amounts of Caffeine.”
-- *3025.11*, “On the Emotional Stability of GPUs Under Extreme Stress.”
-- *3025.08*, “Instant Noodles as Scalable Research Infrastructure.”
-- *3025.03*, “Sleep is Temporary, Camera-Ready is Forever.”
+<div id="talks" class="section-anchor"></div>
+<h2>技能优势</h2>
+<div class="skill-grid">
+  <div class="skill-card">
+    <div class="skill-title">产品设计</div>
+    <p>熟悉 Figma 与 PRD 撰写，能够将业务需求转化为结构化产品方案并辅助落地。</p>
+    <div class="skill-tags"><span>Figma</span><span>PRD</span><span>原型设计</span></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-title">AI 工具</div>
+    <p>熟练使用 Cursor、Codex、ChatGPT 等工具，通过 VibeCoding 完成自动化系统与微信小程序开发。</p>
+    <div class="skill-tags"><span>Cursor</span><span>Codex</span><span>ChatGPT</span></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-title">编程开发</div>
+    <p>熟悉 JavaScript、Python，具备产品原型开发、功能实现与自动化脚本编写能力。</p>
+    <div class="skill-tags"><span>JavaScript</span><span>Python</span><span>自动化脚本</span></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-title">数据分析</div>
+    <p>熟练使用 Python 与 SQL 进行数据清洗、分析和可视化，支持业务决策与优化。</p>
+    <div class="skill-tags"><span>pandas</span><span>numpy</span><span>SQL</span></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-title">英语能力</div>
+    <p>拥有四个月海外学习经历，托福 95、六级 619，可将英语作为工作语言。</p>
+    <div class="skill-tags"><span>TOEFL 95</span><span>CET-6 619</span><span>英文沟通</span></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-title">沟通协作</div>
+    <p>具备跨团队协作意识，能够对接产品、技术等角色，推动项目落地并及时反馈优化。</p>
+    <div class="skill-tags"><span>跨团队协作</span><span>项目推进</span><span>反馈优化</span></div>
+  </div>
+</div>

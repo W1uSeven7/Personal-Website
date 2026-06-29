@@ -2,14 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
-#news,
-    #experience,
-    #publications,
-    #projects,
-    #awards,
-    #talks {
-        scroll-margin-top: 80px;
-    }
+.section-anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    height: 0;
+    visibility: hidden;
+}
   
       /* ===== News Scroll Box ===== */
     .news-box {
@@ -78,209 +77,6 @@
     .experience-card {
         box-sizing: border-box;
     }
-    .publication-card {
-        display: flex;
-        align-items: center;
-        padding: 3px;
-        border: 1.5px solid #ddd;
-        border-radius: 8px;
-        background: #fff;
-        box-sizing: border-box;
-        margin-bottom: 20px; 
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        color: #5f6368;
-    }
-    .publication-card > div > strong,
-    .publication-card > div > div > strong {
-        color: #202124;
-    }
-    .publication-card i {
-        color: #6b7280;
-    }
-
-    .pub-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35em;
-        margin-left: 8px;
-        padding: 2px 8px;
-        border-radius: 999px;
-        font-size: 11px;
-        font-weight: 650;
-        line-height: 1.4;
-        letter-spacing: 0.01em;
-        vertical-align: middle;
-        white-space: nowrap;
-        border: 1px solid transparent;
-        background: rgba(107, 114, 128, 0.08);
-        color: #6b7280;
-    }
-
-    .pub-badge::before {
-        content: "";
-        width: 0.45em;
-        height: 0.45em;
-        border-radius: 999px;
-        background: currentColor;
-        opacity: 0.75;
-    }
-
-    .pub-badge--oral {
-        margin-left: 4px;
-        vertical-align: 2px;
-        color: #4c6a94;
-        background: rgba(131, 161, 199, 0.14);
-        border-color: rgba(131, 161, 199, 0.35);
-    }
-    .publication-card:hover {
-       
-        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    }
-
-    .publication-card.featured {
-        border-color: #f5bba7;
-        background: #fef5f1;
-        box-shadow: 0 4px 8px rgba(242, 166, 120, 0.2);
-        z-index: 10;
-    }
-
-    .publication-card.featured:hover {
-        box-shadow: 0 8px 16px rgba(242, 166, 120, 0.4); 
-    }
-    
-    /*.publication-card.non-featured {*/
-        /*display: flex;*/
-    /*}*/
-    
-    .pub-button-container {
-        display: flex;
-        gap: 10px;
-        margin: 20px 0;
-        flex-wrap: wrap;
-    }
-    
-    .pub-button {
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        padding: 8px 16px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    
-    .pub-button:hover {
-        background-color: #e0e0e0;
-    }
-    
-    .pub-button.active {
-        background-color: #ca6f6f;
-        color: white;
-        border-color: #ca6f6f;
-    }
-
-      .publication-view[hidden] {
-        display: none !important;
-    }
-
-      #full-publications {
-        max-height: 380px;
-        overflow-y: auto;
-        padding-right: 8px;
-        margin-bottom: 24px;
-        scroll-behavior: smooth;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(185, 95, 61, 0.45) rgba(254, 245, 241, 0.7);
-    }
-
-    #full-publications::-webkit-scrollbar {
-        width: 8px;
-    }
-
-    #full-publications::-webkit-scrollbar-track {
-        background: rgba(254, 245, 241, 0.7);
-        border-radius: 999px;
-    }
-
-    #full-publications::-webkit-scrollbar-thumb {
-        background: rgba(185, 95, 61, 0.45);
-        border-radius: 999px;
-    }
-
-    #full-publications::-webkit-scrollbar-thumb:hover {
-        background: rgba(185, 95, 61, 0.65);
-    }
-  
-    .full-publication-list {
-        margin: 0;
-        padding-left: 1.25rem;
-        color: #5f6368;
-        font-size: 15px;
-        line-height: 1.55;
-    }
-
-    .full-publication-list li {
-        margin-bottom: 14px;
-    }
-
-    .pub-list-badge {
-        display: inline-block;
-        margin-right: 6px;
-        padding: 2px 8px;
-        border-radius: 999px;
-        border: 1px solid rgba(245, 187, 167, 0.75);
-        background: #fef5f1;
-        color: #b95f3d;
-        font-size: 11px;
-        font-weight: 650;
-        line-height: 1.35;
-        vertical-align: 1px;
-        white-space: nowrap;
-    }
-
-    .full-publication-list .pub-list-title {
-        color: #202124;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 1.45;
-        text-decoration: none !important;
-    }
-
-      .pub-list-authors {
-        color: #6b7280;
-        font-size: 13px;
-        font-style: italic;
-    }
-
-    .pub-list-authors > strong {
-        color: #202124;
-    }
-
-      .pub-list-authors a strong {
-        color: inherit;
-    }
-
-    .pub-list-note {
-        color: #c7774c;
-        font-style: italic;
-        font-weight: 650;
-    }
-
-    .pub-list-links {
-        white-space: nowrap;
-    }
-
-    .pub-list-links a {
-        margin-left: 4px;
-        color: #c7774c !important;
-        font-weight: 600;
-    }
-
-      .pub-list-links a:hover {
-        color: #b65f36 !important;
-    }
-
-    /* Projects cards: keep styles independent from publications */
     .project-card {
         display: flex;
         align-items: center;
@@ -304,25 +100,255 @@
         color: #6b7280;
     }
 
+    .project-author {
+        margin: 4px 0 8px;
+        color: #6f7f90;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 1.5;
+    }
+
+    .project-author a {
+        color: inherit !important;
+        font-weight: 600;
+    }
+
+    .project-author strong {
+        color: inherit !important;
+        font-weight: 600;
+    }
+
+    .project-author a:hover {
+        color: #ca6f6f !important;
+    }
+
     .project-card:hover {
         box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
+    .project-card > div {
+        width: 100%;
+        gap: 28px;
+    }
+
+    .project-media {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: clamp(300px, 36%, 430px);
+        aspect-ratio: 4 / 3;
+        flex: 0 0 clamp(300px, 36%, 430px);
+        overflow: hidden;
+        border: 1px solid #eef0f2;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #f8fafc, #ffffff);
+    }
+
+    .project-media img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .award-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin: 16px 0 34px;
+    }
+
+    .award-card {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        padding: 16px 18px;
+        border: 1px solid #f0d8d8;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #fff, #fff8f8);
+        box-shadow: 0 6px 16px rgba(202, 111, 111, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .award-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 22px rgba(202, 111, 111, 0.14);
+    }
+
+    .award-card--highlight {
+        border-color: #efc0a8;
+        background: linear-gradient(135deg, #fff7ee, #fff);
+    }
+
+    .award-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        border-radius: 14px;
+        background: rgba(202, 111, 111, 0.12);
+        font-size: 22px;
+    }
+
+    .award-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .award-date {
+        display: inline-block;
+        width: fit-content;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: rgba(202, 111, 111, 0.12);
+        color: #b85e5e;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .award-content strong {
+        color: #343a40;
+        font-size: 16px;
+        line-height: 1.35;
+    }
+
+    .award-content p,
+    .service-content p,
+    .skill-card p {
+        margin: 0;
+        color: #6b7280;
+        line-height: 1.65;
+    }
+
+    .service-timeline {
+        position: relative;
+        margin: 16px 0 34px;
+        padding-left: 26px;
+    }
+
+    .service-timeline::before {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        border-radius: 999px;
+        background: linear-gradient(#f0b2b2, #d7e5f5);
+    }
+
+    .service-item {
+        position: relative;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+        padding: 16px 18px;
+        border: 1px solid #e8edf3;
+        border-radius: 14px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(73, 78, 82, 0.06);
+    }
+
+    .service-item::before {
+        content: "";
+        position: absolute;
+        left: -24px;
+        top: 22px;
+        width: 12px;
+        height: 12px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        background: #ca6f6f;
+        box-shadow: 0 0 0 2px rgba(202, 111, 111, 0.25);
+    }
+
+    .service-date {
+        color: #ca6f6f;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .service-content strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #343a40;
+        font-size: 16px;
+    }
+
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 16px 0 10px;
+    }
+
+    .skill-card {
+        padding: 18px;
+        border: 1px solid #e9edf2;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(73, 78, 82, 0.06);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 26px rgba(73, 78, 82, 0.1);
+    }
+
+    .skill-title {
+        margin-bottom: 8px;
+        color: #343a40;
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    .skill-tags span {
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: rgba(131, 161, 199, 0.14);
+        color: #55759f;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
       @media (max-width: 720px) {
-        .publication-card,
         .project-card {
             align-items: stretch;
             padding: 8px;
         }
 
-        .publication-card > div,
+        .award-grid,
+        .skill-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .service-item {
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
         .project-card > div {
             flex-direction: column;
             align-items: stretch !important;
             width: 100%;
         }
 
-        .publication-card .pub-media-rotator,
         .project-card .pub-media-rotator {
             width: 100% !important;
             height: auto !important;
@@ -331,24 +357,19 @@
             margin-bottom: 12px;
         }
 
-        .publication-card .pub-media-rotator > img,
+        .project-media {
+            flex-basis: auto;
+            max-width: none;
+        }
+
         .project-card .pub-media-rotator > img {
             width: 100% !important;
             height: 100% !important;
             object-fit: contain;
         }
 
-        .publication-card strong,
         .project-card strong {
             line-height: 1.35;
-        }
-
-        .full-publication-list {
-            padding-left: 1rem;
-        }
-
-        .pub-list-badge {
-            margin-bottom: 4px;
         }
     }
         body {
@@ -371,6 +392,18 @@
             text-decoration: underline;
         }
 
-
+/* Fix Font Awesome icons showing as squares */
+.fas, .fa-solid, .far, .fa-regular, .fa {
+    font-family: "Font Awesome 6 Free" !important;
+  }
+  .fab, .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+  }
+  .fas, .fa-solid {
+    font-weight: 900 !important;
+  }
+  .far, .fa-regular {
+    font-weight: 400 !important;
+  }
 
 

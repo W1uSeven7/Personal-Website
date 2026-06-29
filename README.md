@@ -1,15 +1,14 @@
 ﻿# WowPage
 
-WowPage is a clean, responsive academic homepage built with Jekyll and adapted from the Academic Pages theme. It is designed for students, researchers, and engineers who want a personal website for introducing their profile, publications, projects, experience, awards, talks, services, and CV.
+WowPage is a clean, responsive personal homepage built with Jekyll and adapted from the Academic Pages theme. It is designed for showcasing a personal profile, projects, experience, awards, talks, services, and CV.
 
 Template is originated from [selen-suyue.github.io](https://selen-suyue.github.io/).
 Example：[wd7ang.github.io](https://wd7ang.github.io).
 ## Features
 
 - Academic-style homepage with author profile sidebar
-- Single-page navigation for news, experience, publications, projects, awards, services, and talks
+- Single-page navigation for news, experience, projects, awards, services, and talks
 - Custom homepage styling through `assets/css/home.css`
-- Publication filtering on the homepage
 - CV link support through the navigation menu
 - Social profile fields managed from `_config.yml`
 - GitHub Pages compatible Jekyll setup
@@ -29,9 +28,7 @@ Example：[wd7ang.github.io](https://wd7ang.github.io).
 ├── _pages/                  # Main site pages, including the homepage
 ├── _sass/                   # Theme Sass source files
 ├── assets/                  # CSS, JavaScript, and theme assets
-├── images/                  # Profile, logos, publication images, and other media
-├── markdown_generator/      # Helper scripts/templates for generating markdown content
-├── talkmap/                 # Talk map page assets
+├── images/                  # Profile, logos, project images, and other media
 ├── Gemfile                  # Ruby/Jekyll dependencies
 ├── package.json             # JavaScript build dependencies and scripts
 └── LICENSE
@@ -44,8 +41,9 @@ Example：[wd7ang.github.io](https://wd7ang.github.io).
 Install the following tools before running the site locally:
 
 - Ruby and Bundler
-- Node.js and npm
 - Git
+
+Node.js and npm are only needed if you want to rebuild the bundled JavaScript file.
 
 ### Installation
 
@@ -55,7 +53,6 @@ Clone the repository and install dependencies:
 git clone <your-repository-url>
 cd WowPage
 bundle install
-npm install
 ```
 
 ### Run Locally
@@ -67,7 +64,7 @@ bundle exec jekyll serve
 ```
 
 Then open the local URL shown in the terminal, usually:
-
+python -m http.server 5500
 ```text
 http://127.0.0.1:4000/
 ```
@@ -96,11 +93,11 @@ name: "Your Name"
 description: "A clean academic homepage template."
 author:
   avatar: "1.png"
-  name: "Your Name"
-  bio: "Student and researcher."
-  location: "City, Country"
-  employer: "Institution or Company"
-  email: "name@example.com"
+  name: "吴琦"
+  bio: "男大学生倒计时版👩‍🎓"
+  location: "中国重庆市"
+  employer: "西南大学"
+  email: "552394206@qq.com"
 ```
 
 ### Homepage Content
@@ -111,7 +108,7 @@ The homepage content is mainly maintained in:
 _pages/about.md
 ```
 
-Update this file to edit sections such as news, experience, publications, projects, awards, services, talks, and the introductory text.
+Update this file to edit sections such as news, experience, projects, awards, services, talks, and the introductory text.
 
 ### Navigation
 
@@ -129,15 +126,13 @@ main:
     url: "/#news"
   - title: "Experience"
     url: "/#experience"
-  - title: "Pub"
-    url: "/#publications"
   - title: "CV-En"
     url: "/files/weidongtang_resume.pdf"
 ```
 
 ### Images and Media
 
-Place profile photos, organization logos, project images, publication thumbnails, and other visual assets in:
+Place profile photos, organization logos, project images, and other visual assets in:
 
 ```text
 images/
@@ -197,7 +192,7 @@ Before publishing, consider updating:
 - Navigation links in `_data/navigation.yml`
 - Homepage sections in `_pages/about.md`
 - CV file and CV link
-- Publication metadata, project descriptions, and external links
+- Project descriptions and external links
 - Analytics or site verification settings, if needed
 
 ## License

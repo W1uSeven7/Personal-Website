@@ -1,21 +1,21 @@
 locale                   : "en-US"
-title                    : "WowPage"
+title                    : "MyWebsite"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "WU QI"
 description              : &description "A clean academic homepage template."
 url                      : ""
 baseurl                  : ""
 repository               : ""
 
 author:
-  avatar           : "1.png"
-  name             : "Your Name"
+  avatar           : "1.jpg"
+  name             : "吴琦"
   pronouns         :
-  bio              : "Student and researcher."
-  location         : "City, Country"
-  employer         : "Institution or Company"
+  bio              : "写下我度秒如年难捱的离骚"
+  location         : "中国重庆市"
+  employer         : "西南大学"
   uri              :
-  email            : "name@example.com"
+  email            : "552394206@qq.com"
 
   arxiv            :
   googlescholar    :
@@ -28,24 +28,23 @@ author:
   bitbucket        :
   codepen          :
   dribbble         :
-  github           :
+  github           : "W1uSeven7"
   kaggle           :
   stackoverflow    :
 
-  WeChat           :
+  WeChat           : "/images/wechat_profile.jpg"
   linkedin         :
   bilibili         :
   twitter          :
   youtube          :
   zhihu            :
-  XiaoHongShu      :
+  XiaoHongShu      : "https://www.xiaohongshu.com/user/profile/64b2bac3000000001c0284b3"
 
 teaser                   :
 breadcrumbs              : false
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled"
-talkmap_link             : false
 
 comments:
   provider               :
@@ -76,7 +75,7 @@ staticman:
         format           : "iso8601"
 
 atom_feed:
-  hide                   : false
+  hide                   : true
   path                   :
 
 google_site_verification :
@@ -158,9 +157,6 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -188,14 +184,6 @@ defaults:
   - scope:
       path: ""
       type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  - scope:
-      path: ""
-      type: publications
     values:
       layout: single
       author_profile: true

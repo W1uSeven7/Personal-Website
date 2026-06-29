@@ -1,29 +1,26 @@
 # main links links
 
 main:
-  - title: "News"
+  - title: "最新动态"
     url: "/#news"
 
-  - title: "Experience"
+  - title: "教育/实习经历"
     url: "/#experience"
 
-  - title: "Pub"
-    url: "/#publications"
-
-  - title: "Project"
+  - title: "项目经历"
     url: "/#projects"
 
-  - title: "Awards"
+  - title: "荣誉奖项"
     url: "/#awards"
 
-  - title: "Services"
+  - title: "学生服务"
     url: "/#services"
     
-  - title: "Talks"
+  - title: "技能优势"
     url: "/#talks"
     
-  - title: "CV-En"
-    url: "/files/weidongtang_resume.pdf"
+  - title: "个人简历"
+    url: "/files/wuqi_resume.pdf"
 
   # - title: "CV-Cn"
   #   url: "/files/chinese_resume.pdf"

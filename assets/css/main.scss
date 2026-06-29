@@ -110,3 +110,8 @@ body {
 .sidebar .author__urls {
   transform: translateX(25px);
 }
+@media (min-width: 1024px) {
+  .masthead__menu-item--lg {
+    padding-right: 12em;
+  }
+}

@@ -5,7 +5,6 @@ name                     : "WU QI"
 description              : &description "A clean academic homepage template."
 url                      : "https://w1useven7.github.io"
 baseurl                  : "/Personal-Website"
-baseurl                  : ""
 repository               : ""
 
 author:

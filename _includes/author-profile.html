@@ -38,7 +38,12 @@
         <li><a href="#" class="js-copy-email" data-email="{{ author.email }}" role="button"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
       {% if author.WeChat %}
-        <li class="author__wechat"><a href="{{ author.WeChat }}"><i class="fab fa-fw fa-weixin icon-pad-right" aria-hidden="true"></i>WeChat</a></li>
+        {% if author.WeChat contains "://" %}
+          {% assign wechat_url = author.WeChat %}
+        {% else %}
+          {% assign wechat_url = author.WeChat | prepend: base_path %}
+        {% endif %}
+        <li class="author__wechat"><a href="{{ wechat_url }}"><i class="fab fa-fw fa-weixin icon-pad-right" aria-hidden="true"></i>WeChat</a></li>
       {% endif %}
       
       <!-- Font Awesome and Academicons icons / Academic websites -->

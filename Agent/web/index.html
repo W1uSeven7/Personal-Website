@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 个人主页生成器</title>
+  <link rel="stylesheet" href="https://unpkg.com/@douyinfe/semi-ui@2.81.0/dist/css/semi.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">MyWebsite Agent</div>
+      <div class="nav-note">为求职大学生生成个人主页</div>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">AI Personal Homepage</p>
+        <h1>填写信息，生成你的个人主页</h1>
+        <p class="hero-desc">
+          面向正在找实习/工作的大学生。你只需要填写个人背景、经历和技能，AI 会整理展示文案，并生成一份可预览的个人主页。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#form">开始填写</a>
+          <a class="btn btn-secondary" href="#process">查看流程</a>
+        </div>
+      </div>
+      <div class="hero-card" id="process">
+        <span class="status-dot"></span>
+        <h2>三步完成</h2>
+        <ol class="mini-flow">
+          <li>填写你的个人信息和经历</li>
+          <li>点击生成主页，AI 自动总结经历亮点</li>
+          <li>跳转预览页，查看生成后的个人主页</li>
+        </ol>
+      </div>
+    </section>
+  </header>
+
+  <main class="single-workspace">
+    <section id="form" class="panel form-panel">
+      <div class="section-title center">
+        <p class="eyebrow">Create your homepage</p>
+        <h2>填写主页信息</h2>
+        <p>字段尽量用自然语言填写，只需要描述你的背景、经历和优势。</p>
+      </div>
+
+      <form id="homepageForm">
+        <div class="validation-box" id="validationBox" aria-live="polite">
+          <strong>准备开始</strong>
+          <p>填写信息后点击底部按钮，即可生成个人主页预览。</p>
+        </div>
+
+        <fieldset class="form-card">
+          <legend>基础信息</legend>
+          <label>姓名<input name="name" value="吴琦" required></label>
+          <label>一句话介绍<input name="bio" value="写下我度秒如年难捱的离骚" required></label>
+          <div class="grid two">
+            <label>所在城市<input name="location" value="中国重庆市" required></label>
+            <label>学校<input name="school" value="西南大学" required></label>
+          </div>
+          <div class="grid two">
+            <label>邮箱<input name="email" value="552394206@qq.com" required></label>
+            <label>微信号<input name="wechatId" value="MrSteven-1022" required></label>
+          </div>
+          <div class="grid two">
+            <label>GitHub 链接（选填）<input name="github" value="https://github.com/W1uSeven7"></label>
+            <label>个人博客（选填）<input name="blog" placeholder="例如：https://your-blog.com"></label>
+          </div>
+          <label class="upload-field">
+            上传头像
+            <input name="avatarFile" type="file" accept="image/*">
+            <span>建议使用清晰正方形头像。上传后会保存到本次生成主页的 images 文件夹，并自动用于左侧个人简介。</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>主页开场介绍</legend>
+          <label>
+            自我介绍
+            <span class="field-hint">用于展示在个人主页开场介绍区域。</span>
+            <textarea
+              name="selfIntro"
+              placeholder="用2-3句话介绍自己，重点突出学校专业和求职方向"
+              required
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>教育背景</legend>
+          <div class="grid two">
+            <label>学校<input name="eduSchool" value="西南大学" required></label>
+            <label>专业<input name="major" value="信息管理与信息系统" required></label>
+          </div>
+          <div class="grid three">
+            <label>学历<input name="degree" value="本科" required></label>
+            <label class="range-label wide">起止时间
+              <input type="hidden" name="eduStart" value="2023.09" required>
+              <input type="hidden" name="eduEnd" value="2027.06" required>
+              <div class="semi-date-range-host" data-semi-month-range data-start-name="eduStart" data-end-name="eduEnd" data-start-value="2023.09" data-end-value="2027.06" data-required="true"></div>
+            </label>
+          </div>
+          <input
+            type="hidden"
+            name="eduDescSource"
+            value="GPA: 3.96/5, Rank: 前10%; 主修课程: 数据库应用与实践、Python 数据分析与编程、Web 前端开发、管理信息系统。"
+          >
+          <div class="grid two">
+            <label>GPA<input name="gpa" placeholder="如 3.96/5"></label>
+            <label>
+              Rank
+              <select name="rank">
+                <option value="">请选择</option>
+                <option value="前10%">前10%</option>
+                <option value="前30%">前30%</option>
+                <option value="前50%">前50%</option>
+                <option value="后50%">后50%</option>
+                <option value="后30%">后30%</option>
+              </select>
+            </label>
+          </div>
+          <label>主修课程<textarea name="majorCourses" placeholder="如 数据库应用与实践、Python 数据分析与编程、Web 前端开发、管理信息系统"></textarea></label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>实习经历</legend>
+          <div class="grid two">
+            <label>公司/组织<input name="internCompany" value="叫叫阅读"></label>
+            <label>岗位<input name="internRole" value="AI 产品实习生"></label>
+          </div>
+          <div class="grid two">
+            <label class="range-label">实习起止时间
+              <input type="hidden" name="internStart" value="2025.07">
+              <input type="hidden" name="internEnd" value="2025.09">
+              <div class="semi-date-range-host" data-semi-month-range data-start-name="internStart" data-end-name="internEnd" data-start-value="2025.07" data-end-value="2025.09"></div>
+            </label>
+          </div>
+          <label>你主要做了什么？<textarea name="internBullet1">借助 Codex 和 Cursor 参与设计自动化广告投放系统。</textarea></label>
+          <label>你解决了什么问题？<textarea name="internBullet2">梳理广告投放流程中的重复操作和人工判断节点。</textarea></label>
+          <label>你如何推进这件事？<textarea name="internBullet3">协助完成需求整理、功能验证和用户反馈收集。</textarea></label>
+          <label>最终有什么结果？<textarea name="internBullet4">推动广告投放流程自动化，将部分操作时间缩短至秒级。</textarea></label>
+          <label class="upload-field">
+            上传公司 logo
+            <input name="internLogoFile" type="file" accept="image/*">
+            <span>可上传公司、组织或学校 logo。上传后会保存到本次生成主页的 images 文件夹，并用于实习经历卡片。</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>项目经历</legend>
+          <div class="grid two">
+            <label>项目名称<input name="projectName" value="校园二手交易小程序" required></label>
+            <label>你的角色<input name="projectRole" value="产品设计与开发协作" required></label>
+          </div>
+          <div class="grid two">
+            <label class="range-label">项目起止时间
+              <input type="hidden" name="projectStart" value="2026.03" required>
+              <input type="hidden" name="projectEnd" value="2026.05" required>
+              <div class="semi-date-range-host" data-semi-month-range data-start-name="projectStart" data-end-name="projectEnd" data-start-value="2026.03" data-end-value="2026.05" data-required="true"></div>
+            </label>
+          </div>
+          <label>项目链接（选填）<input name="projectCode" value="https://github.com/xiaoxiaoyuweixie/CampusX"></label>
+          <label>项目背景<textarea name="situation" required>校园闲置物品交易存在信息分散、沟通成本高、信任不足等问题。</textarea></label>
+          <label>你的任务<textarea name="task" required>与队友合作完成一个校园二手交易微信小程序 MVP，覆盖从需求调研到功能迭代的完整流程。</textarea></label>
+          <label>你做了什么<textarea name="action" required>参与问卷调研、需求文档编写、原型设计、界面开发、用户内测和功能迭代。</textarea></label>
+          <label>项目结果<textarea name="result" required>完成第一个完整 MVP，为后续正式上线和持续优化做准备。</textarea></label>
+          <label class="upload-field">
+            上传项目展示图
+            <input name="projectImageFile" type="file" accept="image/*">
+            <span>可以上传产品截图、项目海报或界面图。上传后会保存到本次生成主页的 images 文件夹，并用于项目经历展示。</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>荣誉奖项（选填）</legend>
+          <div class="grid two">
+            <label>奖项时间<input name="awardDate1" value="2024.12"></label>
+            <label>奖项名称<input name="awardContent1" value="国家奖学金"></label>
+          </div>
+          <div class="grid two">
+            <label>奖项时间<input name="awardDate2" value="2025.12"></label>
+            <label>奖项名称<input name="awardContent2" value="西南大学一等奖学金"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>学生工作（选填）</legend>
+          <div class="grid two">
+            <label>组织<input name="workOrg1" value="西南大学"></label>
+            <label>角色<input name="workRole1" value="创新创业部部长"></label>
+          </div>
+          <div class="grid two">
+            <label class="range-label">学生工作起止时间
+              <input type="hidden" name="workStart1" value="2024.09">
+              <input type="hidden" name="workEnd1" value="2025.09">
+              <div class="semi-date-range-host" data-semi-month-range data-start-name="workStart1" data-end-name="workEnd1" data-start-value="2024.09" data-end-value="2025.09"></div>
+            </label>
+          </div>
+          <label>你负责了什么？<textarea name="workContent1">参与组织创新创业相关活动，推动学生项目交流与落地。</textarea></label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>技能优势</legend>
+          <div class="grid three">
+            <label>技能 1<input name="skill1" value="产品设计" required></label>
+            <label>技能 2<input name="skill2" value="AI 工具" required></label>
+            <label>技能 3<input name="skill3" value="数据分析" required></label>
+          </div>
+          <label>技能 1 说明<textarea name="skillDesc1">熟悉 Figma 和 PRD 撰写，能够将业务需求转化为结构化产品方案并辅助落地。</textarea></label>
+          <label>技能 2 说明<textarea name="skillDesc2">熟练使用 Cursor、Codex、ChatGPT 等工具，通过 VibeCoding 完成自动化系统与微信小程序开发。</textarea></label>
+          <label>技能 3 说明<textarea name="skillDesc3">熟练使用 Python 和 SQL 进行数据清洗、分析和可视化，支持业务决策与优化。</textarea></label>
+        </fieldset>
+
+        <fieldset class="form-card">
+          <legend>简历入口</legend>
+          <label>简历文件名称<input name="resumeLabel" value="个人简历 PDF" required></label>
+          <label class="upload-field">
+            上传 PDF 文件
+            <input id="resumePdfInput" name="resumePdfFile" type="file" accept=".pdf,application/pdf">
+            <span>仅支持上传 PDF 文件。上传后会保存到本次生成主页的 files 文件夹，并自动更新简历入口。</span>
+            <span id="resumeFileName" class="upload-file-name" aria-live="polite"></span>
+            <span id="resumeUploadStatus" class="upload-status" aria-live="polite"></span>
+          </label>
+        </fieldset>
+
+        <div class="form-actions center-actions">
+          <button id="generateButton" class="btn btn-primary btn-large" type="submit">生成主页</button>
+          <button class="btn btn-ghost" type="reset">重新填写</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>AI 个人主页生成器 · 让求职展示更完整</p>
+  </footer>
+
+  <script type="module" src="./semi-date-range.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

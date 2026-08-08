@@ -9,6 +9,12 @@ local/
 .bundle/
 .codex/
 .agents/
+.env
+.env.*
+Agent/.env
+Agent/generated/
+__pycache__/
+*.py[cod]
 
 # Ignore the Gemfile that is generated
 Gemfile.lock

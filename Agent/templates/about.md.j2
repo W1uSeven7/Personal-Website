@@ -1,0 +1,154 @@
+---
+permalink: /
+author_profile: true
+stylesheets:
+  - /assets/css/home.css
+redirect_from:
+  - /about/
+  - /about.html
+---
+<h1 class="main-heading">{{ intro.greeting | default('你好👋 欢迎来到我的主页！') | replace('👋', '<img src="images/Hi.gif" width="40px">') }}</h1>
+
+{% for line in intro.summary %}
+{{ line }}
+
+{% endfor %}
+
+{% if news %}
+<div id="news" class="section-anchor"></div>
+<h2>最新动态</h2>
+<div class="news-box">
+  <ul class="news-list">
+
+{% for item in news %}
+<li><span class="news-date"><em>{{ item.date }}</em></span> {{ item.content }}</li>
+
+{% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div id="experience" class="section-anchor"></div>
+<h2>教育/实习经历</h2>
+
+<div class="experience-container">
+{% for item in internships %}
+
+  <div class="experience-card">
+      <img src="{{ item.logo | default('images/JOJO.jpg') | replace('/images/', 'images/') }}" alt="{{ item.company }} logo" class="experience-logo">
+      <div class="experience-info">
+          <strong>{{ item.company }}</strong><br>
+          <em>{{ item.start }} - {{ item.end }}</em><br>
+          {{ item.role }}<br>
+          <span style="color:#888;">{{ item.summary }}</span>
+      </div>
+  </div>
+{% endfor %}
+
+  <div class="experience-card">
+      <img src="{{ education.logo | default('images/swu.png') | replace('/images/', 'images/') }}" alt="{{ education.school }} logo" class="experience-logo">
+      <div class="experience-info">
+          <strong>{{ education.school }}</strong><br>
+          <em>{{ education.start }} - {{ education.end }}</em><br>
+          {{ education.description }}<br>
+          <span style="color:#888;">{{ education.degree }} · {{ education.major }}</span>
+      </div>
+  </div>
+</div>
+
+
+<div id="projects" class="section-anchor"></div>
+<h2>项目经历</h2>
+{% for project in projects %}
+<div class="project-card" data-category="project">
+  <div style="display: flex; align-items: center;">
+    {% if project.image %}
+    <div class="pub-media-rotator project-media" data-interval="4000">
+      <img src="{{ project.image | replace('/images/', 'images/') }}" alt="{{ project.name }}截图">
+    </div>
+    {% endif %}
+    <div>
+      <strong>{{ project.name }}</strong><br>
+      {% if project.start or project.end %}
+      <em>{{ project.start }} - {{ project.end }}</em><br>
+      {% endif %}
+      <div class="project-author">
+        角色：
+        <strong>{{ project.role }}</strong>
+      </div>
+      {{ project.summary }}
+      <br>
+      {% if project.links.project or project.links.code %}
+      <b><i style="color:#83a1c7;">Project &nbsp;</i></b>
+      {% if project.links.project %}
+      <a href="{{ project.links.project }}" target="_blank"><em>[project]</em></a>
+      {% endif %}
+      {% if project.links.code %}
+      <a href="{{ project.links.code }}" target="_blank"><em>[code]</em></a>
+      {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+{% if awards %}
+<div id="awards" class="section-anchor"></div>
+<h2>荣誉奖项</h2>
+<div class="award-grid">
+{% for award in awards %}
+  <div class="award-card{% if loop.first %} award-card--highlight{% endif %}">
+    <div class="award-icon">{% if loop.first %}🏆{% elif loop.index == 2 %}⭐{% elif loop.index == 3 %}🎖️{% else %}💎{% endif %}</div>
+    <div class="award-content">
+      <span class="award-date">{{ award.date }}</span>
+      <strong>{{ award.content }}</strong>
+      <p>{{ award.description | default('荣誉奖项') }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
+{% if student_work %}
+<div id="services" class="section-anchor"></div>
+<h2>学生服务</h2>
+<div class="service-timeline">
+{% for item in student_work %}
+  <div class="service-item">
+    <span class="service-date">{{ item.start }} — {{ item.end }}</span>
+    <div class="service-content">
+      <strong>{% if item.organization %}{{ item.organization }} · {% endif %}{{ item.role }}</strong>
+      <p>{{ item.content }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
+<div id="talks" class="section-anchor"></div>
+<h2>技能优势</h2>
+<div class="skill-grid">
+{% for skill in skills %}
+  <div class="skill-card">
+    <div class="skill-title">{{ skill.name }}</div>
+    <p>{{ skill.description }}</p>
+    <div class="skill-tags">{% for tag in skill.tags %}<span>{{ tag }}</span>{% endfor %}</div>
+  </div>
+{% endfor %}
+</div>
+
+<div id="cv" class="section-anchor"></div>
+<h2>个人简历</h2>
+<div class="project-card" data-category="cv">
+  <div>
+    <strong>{{ resume.label | default('个人简历 PDF') }}</strong><br>
+    如需查看完整教育背景、项目经历和求职信息，可点击下方链接打开简历文件。
+    {% if resume.uploaded_filename %}
+    <br><span style="color:#888;">已上传：{{ resume.uploaded_filename }}</span>
+    {% endif %}
+    <br>
+    <b><i style="color:#83a1c7;">Resume &nbsp;</i></b>
+    <a href="{{ resume.path | replace('/files/', 'files/') }}" target="_blank"><em>[pdf]</em></a>
+  </div>
+</div>

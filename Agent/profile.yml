@@ -1,0 +1,84 @@
+profile:
+  name: "吴琦"
+  avatar: "/images/avatar.jpg"
+  bio: "写下我度秒如年难捱的离骚"
+  location:
+    text: "中国重庆市"
+    url: "https://gaode.com/place/B0017875LP"
+  school:
+    text: "西南大学"
+    url: "https://www.swu.edu.cn/"
+  email: "552394206@qq.com"
+  wechat_id: "MrSteven-1022"
+  wechat_qr: "/images/wechat_qr.jpg"
+  github: "https://github.com/W1uSeven7"
+  blog: ""
+
+intro:
+  greeting: "你好👋 欢迎来到我的主页！"
+  summary:
+    - "Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业，正在寻找 AI 产品岗位的实习机会。"
+
+education:
+  school: "西南大学"
+  major: "信息管理与信息系统"
+  degree: "本科"
+  start: "2023.09"
+  end: "2027.06"
+  description: "GPA: 3.96/5, Rank: 前10%; 主修课程: 数据库应用与实践、Python 数据分析与编程、Web 前端开发、管理信息系统。"
+
+internships:
+  - company: "叫叫阅读"
+    role: "AI 产品实习生"
+    start: "2025.07"
+    end: "2025.09"
+    summary: "参与 AI 驱动的自动化广告投放系统设计，围绕投放流程中的重复操作和关键节点完成需求梳理、功能验证与反馈收集。"
+    bullets:
+      - "借助 Codex 和 Cursor 参与设计自动化广告投放系统。"
+      - "梳理广告投放流程中的重复操作和人工判断节点。"
+      - "协助完成需求整理、功能验证和用户反馈收集。"
+      - "推动广告投放流程自动化，将部分操作时间缩短至秒级。"
+
+projects:
+  - name: "校园二手交易小程序"
+    role: "产品设计与开发协作"
+    start: "2026.03"
+    end: "2026.05"
+    image: "/images/project_1.png"
+    summary: "与队友合作完成校园二手交易微信小程序 MVP，参与问卷调研、需求文档、原型设计、界面开发、用户内测和功能迭代。"
+    links:
+      project: ""
+      code: "https://github.com/xiaoxiaoyuweixie/CampusX"
+    star:
+      situation: "校园闲置物品交易存在信息分散、沟通成本高、信任不足等问题。"
+      task: "与队友合作完成一个校园二手交易微信小程序 MVP。"
+      action: "参与问卷调研、需求文档编写、原型设计、界面开发、用户内测和功能迭代。"
+      result: "完成第一个完整 MVP，为后续正式上线和持续优化做准备。"
+
+awards:
+  - date: "2024.12"
+    content: "国家奖学金"
+  - date: "2025.12"
+    content: "西南大学一等奖学金"
+
+student_work:
+  - start: "2024.09"
+    end: "2025.09"
+    role: "创新创业部部长"
+    organization: "西南大学"
+    content: "参与组织创新创业相关活动，推动学生项目交流与落地。"
+
+skills:
+  - name: "产品设计"
+    description: "熟悉 Figma 和 PRD 撰写，能够将业务需求转化为结构化产品方案并辅助落地。"
+    tags: ["Figma", "PRD", "原型设计"]
+  - name: "AI 工具"
+    description: "熟练使用 Cursor、Codex、ChatGPT 等工具，通过 VibeCoding 完成自动化系统与微信小程序开发。"
+    tags: ["Cursor", "Codex", "ChatGPT"]
+  - name: "数据分析"
+    description: "熟练使用 Python 和 SQL 进行数据清洗、分析和可视化，支持业务决策与优化。"
+    tags: ["Python", "SQL", "可视化"]
+
+resume:
+  label: "个人简历 PDF"
+  path: "/files/resume.pdf"

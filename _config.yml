@@ -106,6 +106,7 @@ include:
   - files
 
 exclude:
+  - Agent
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

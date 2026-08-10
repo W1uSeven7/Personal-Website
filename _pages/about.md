@@ -3,7 +3,7 @@ permalink: /
 author_profile: true
 stylesheets:
   - /assets/css/home.css
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -17,6 +17,8 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
 <h2>最新动态</h2>
 <div class="news-box">
   <ul class="news-list">
+
+<li><span class="news-date"><em>2026.07</em></span> 🚀🚀 开启第二段实习，深入参与出海业务，积极拥抱AI新变化.</li>
 
 <li><span class="news-date"><em>2026.06</em></span> 🌟🌟 基金收益突破2k.</li>
 
@@ -45,8 +47,18 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
 
 <div class="experience-container">
 
+<div class="experience-card">
+      <img src="images/GeekDance.png" alt="GeekDance logo" class="experience-logo">
+      <div class="experience-info">
+          <strong>极客跳动</strong><br>
+          <em>2026.07 - 至今</em><br>
+          产品实习生<br>
+          <span style="color:#888;">深入参与出海业务场景，负责产品设计与体验优化，推动功能落地与业务增长.</span>
+      </div>
+  </div>
+
   <div class="experience-card">
-      <img src="images/ucsd.jpg" alt="Haidilao logo" class="experience-logo">
+      <img src="images/ucsd.jpg" alt="UCSD logo" class="experience-logo">
       <div class="experience-info">
           <strong>加州大学圣地亚哥分校（UCSD）</strong><br>
           <em>2025.09 - 2025.12</em><br>
@@ -56,7 +68,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
   </div>
 
   <div class="experience-card">
-      <img src="images/JOJO.jpg" alt="Weijia logo" class="experience-logo">
+      <img src="images/JOJO.jpg" alt="JOJO logo" class="experience-logo">
       <div class="experience-info">
           <strong>叫叫阅读</strong><br>
           <em>2025.07 - 2025.09</em><br>
@@ -66,7 +78,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
   </div>
 
   <div class="experience-card">
-      <img src="images/swu.png" alt="MIT logo" class="experience-logo">
+      <img src="images/swu.png" alt="SWU logo" class="experience-logo">
       <div class="experience-info">
           <strong>西南大学</strong><br>
           <em>2023.09 - 至今</em><br>
@@ -79,12 +91,12 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
 
 <div id="projects" class="section-anchor"></div>
 <h2>项目经历</h2>
-<div class="project-card" data-category="project"> 
+<div class="project-card" data-category="project">
   <div style="display: flex; align-items: center;">
     <div class="pub-media-rotator project-media" data-interval="4000">
       <img src="images/CampusX.png" alt="校园二手交易小程序截图">
     </div>
-    <div> 
+    <div>
       <strong>校园二手交易小程序</strong><br>
       <div class="project-author">
         成员：
@@ -92,30 +104,30 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
         <a href="https://github.com/xiaoxiaoyuweixie" target="_blank"><strong>肖瑞航</strong></a>.
       </div>
       和肖瑞航一起合作，完成从问卷调研—需求文档编写—原型设计—界面开发—用户内测—功能迭代这个从0到1的过程，并在不断完善中，为后续的正式上线做准备。
-      <br> 
-      <b><i style="color:#83a1c7;">Project &nbsp;</i></b> 
-      <a href="https://github.com/xiaoxiaoyuweixie/CampusX"><em>[code]</em></a> 
+      <br>
+      <b><i style="color:#83a1c7;">Project &nbsp;</i></b>
+      <a href="https://github.com/xiaoxiaoyuweixie/CampusX"><em>[code]</em></a>
     </div>
-  </div> 
+  </div>
 </div>
 
-<div class="project-card" data-category="project"> 
+<div class="project-card" data-category="project">
   <div style="display: flex; align-items: center;">
     <div class="pub-media-rotator project-media" data-interval="4000">
       <img src="images/Tetirs.png" alt="新版俄罗斯方块小游戏截图">
     </div>
-    <div> 
+    <div>
       <strong>新版俄罗斯方块小游戏</strong><br>
       <div class="project-author">
         成员：
         <a href="https://github.com/W1uSeven7" target="_blank"><strong>吴琦</strong></a>.
       </div>
       一个基于 Pygame 开发的俄罗斯方块项目，支持登录注册、排行榜、无尽模式、限时模式、双人对战和人机对战（AI）。
-      <br> 
-      <b><i style="color:#83a1c7;">Project &nbsp;</i></b> 
-      <a href="http://github.com/W1uSeven7/New-Tetris"><em>[code]</em></a> 
+      <br>
+      <b><i style="color:#83a1c7;">Project &nbsp;</i></b>
+      <a href="http://github.com/W1uSeven7/New-Tetris"><em>[code]</em></a>
     </div>
-  </div> 
+  </div>
 </div>
 
 

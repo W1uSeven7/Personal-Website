@@ -104,6 +104,11 @@ body {
 .sidebar .author__avatar {
   transform: translateX(-5px);
 }
+
+.sidebar .author__avatar img {
+  border-color: transparent;
+}
+
 .sidebar .author__bio {
   transform: translateX(10px);
 }

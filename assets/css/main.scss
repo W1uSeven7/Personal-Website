@@ -108,6 +108,10 @@ body {
   outline: 0;
 }
 
+.project-card a:focus {
+  outline: 0;
+}
+
 .sidebar .author__name {
   transform: translateX(60px);
 }

@@ -107,6 +107,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
       <br>
       <b><i style="color:#83a1c7;">Project &nbsp;</i></b>
       <a href="https://github.com/xiaoxiaoyuweixie/CampusX"><em>[code]</em></a>
+      <a href="https://www.figma.com/design/ypmVzm832Ho7LpKxfyzsnO/Campusx%E5%8E%9F%E5%9E%8B?t=mW0eME4PG2sSAFbx-0"><em>[原型]</em></a>
     </div>
   </div>
 </div>

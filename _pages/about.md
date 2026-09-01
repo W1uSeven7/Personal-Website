@@ -11,14 +11,16 @@ redirect_from:
 
 Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业（2023-2027）
 
-备战秋招ing，我正在寻找产品岗位的机会，我对 VibeCoding 驱动的产品创新非常感兴趣。借助 Codex、Cursor 等工具，产品经理能够快速完成原型验证、功能开发和用户测试，大幅缩短从想法到产品上线的周期。我希望参与这样的团队，见证并推动产品从 0 到 1 的全过程。
+我持续关注AI+教育，尤其对AI Tutor、AI口语陪练和个性化学习感兴趣。我期待的不只是用AI做教育，而是探索如何通过大模型与 Agent，让学习真正变得更自然、更个性化。
+
+我也喜欢用AI把想法快速变成产品。借助Codex、Cursor等工具，我会通过 Vibe Coding快速完成原型验证、功能开发和用户测试。我希望加入真正将AI融入教育场景的团队，参与并推动产品从想法验证到0→1落地的全过程。
 
 <div id="news" class="section-anchor"></div>
 <h2>最新动态</h2>
 <div class="news-box">
   <ul class="news-list">
 
-<li><span class="news-date"><em>2026.07</em></span> 🚀🚀 开启第二段实习，深入参与出海业务，积极拥抱AI新变化.</li>
+<li><span class="news-date"><em>2026.07</em></span> 🚀🚀 开启第二段实习，参与出海业务，积极拥抱AI新变化.</li>
 
 <li><span class="news-date"><em>2026.06</em></span> 🌟🌟 基金收益突破2k.</li>
 
@@ -26,7 +28,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
 
 <li><span class="news-date"><em>2026.04</em></span> 📈📈 第一次接触基金理财，开始学习长期投资与资产配置.</li>
 
-<li><span class="news-date"><em>2026.01</em></span> 💼💼 来到上海兼职，深入教育行业，探索AI+教育方向的可能性.</li>
+<li><span class="news-date"><em>2026.01</em></span> 💼💼 来到上海担任托福雅思助教和英语家教，深入教育行业，体验AI+教育方向的工作.</li>
 
 <li><span class="news-date"><em>2025.09</em></span> 🌎🌎 在 UCSD 开启交换生活，看见更大的世界.</li>
 
@@ -53,7 +55,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
           <strong>极客跳动</strong><br>
           <em>2026.07 - 至今</em><br>
           产品实习生<br>
-          <span style="color:#888;">深入参与出海业务场景，负责产品设计与体验优化，推动功能落地与业务增长.</span>
+          <span style="color:#888;">负责一款面向海外市场的 AI+家庭育儿 App的产品迭代，覆盖宝宝成长记录、育儿知识问答及AI个性化服务等场景，探索AI在家庭教育与儿童成长中的应用.</span>
       </div>
   </div>
 
@@ -64,6 +66,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
           <em>2025.09 - 2025.12</em><br>
           交换生<br>
           <span style="color:#888;">课程：机器学习、软件工程、人工智能搜索与推理.</span>
+          <a href="https://www.bilibili.com" target="_blank"><em>[演讲视频]</em></a>
       </div>
   </div>
 
@@ -73,7 +76,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
           <strong>叫叫阅读</strong><br>
           <em>2025.07 - 2025.09</em><br>
          AI产品实习生<br>
-          <span style="color:#888;">借助Codex与Cursor设计自动化广告投放系统，构建广告投放全流程自动化，将操作时间缩短至秒级.</span>
+          <span style="color:#888;">负责一款海外儿童英语教育 App 的产品与增长工作，参与题型设计、用户访谈及广告投放策略优化；同时借助 Codex、Cursor 搭建自动化广告投放系统，打通广告创建、修改与投放流程，将操作耗时缩短至秒级.</span>
       </div>
   </div>
 
@@ -205,12 +208,12 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
   </div>
   <div class="skill-card">
     <div class="skill-title">AI 工具</div>
-    <p>熟练使用 Cursor、Codex、ChatGPT 等工具，通过 VibeCoding 完成自动化系统与微信小程序开发。</p>
+    <p>熟练使用 Cursor、Codex 等工具，通过 VibeCoding 完成自动化系统与微信小程序开发。</p>
     <div class="skill-tags"><span>Cursor</span><span>Codex</span><span>ChatGPT</span></div>
   </div>
   <div class="skill-card">
     <div class="skill-title">编程开发</div>
-    <p>熟悉 JavaScript、Python，具备产品原型开发、功能实现与自动化脚本编写能力。</p>
+    <p>熟悉前端三件套以及Python，具备产品原型开发、功能实现与自动化脚本编写能力。</p>
     <div class="skill-tags"><span>JavaScript</span><span>Python</span><span>自动化脚本</span></div>
   </div>
   <div class="skill-card">
@@ -220,7 +223,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
   </div>
   <div class="skill-card">
     <div class="skill-title">英语能力</div>
-    <p>拥有四个月海外学习经历，托福 95、六级 619，可将英语作为工作语言。</p>
+    <p>拥有四个月海外学习经历，托福 95、六级 619，口语流利，英语可作为工作语言。</p>
     <div class="skill-tags"><span>TOEFL 95</span><span>CET-6 619</span><span>英文沟通</span></div>
   </div>
   <div class="skill-card">

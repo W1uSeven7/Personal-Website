@@ -80,8 +80,21 @@
 }
 
 /* Tighten the gap between the last content section and the footer. */
+html,
+body,
+#main,
+.initial-content {
+  background: linear-gradient(180deg, #f7f9fb 0%, #f9fbfd 45%, #f4f7fb 100%);
+}
+
 body {
   padding-bottom: 0;
+}
+
+.masthead,
+.greedy-nav,
+.page__footer {
+  background-color: #f7f9fb;
 }
 
 .page__footer {
@@ -112,23 +125,42 @@ body {
   outline: 0;
 }
 
-.sidebar .author__name {
-  transform: translateX(60px);
-}
-.sidebar .author__avatar {
-  transform: translateX(-5px);
+.experience-card a:focus {
+  outline: 0;
 }
 
 .sidebar .author__avatar img {
   border-color: transparent;
 }
 
-.sidebar .author__bio {
-  transform: translateX(10px);
+@media (min-width: 1024px) {
+  .sidebar [itemtype="http://schema.org/Person"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidebar .author__avatar,
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper {
+    width: 100%;
+  }
+
+  .sidebar .author__avatar img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidebar .author__urls {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
 }
-.sidebar .author__urls {
-  transform: translateX(25px);
-}
+
 @media (min-width: 1024px) {
   .masthead__menu-item--lg {
     padding-right: 12em;

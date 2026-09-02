@@ -11,7 +11,7 @@ redirect_from:
 
 Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业（2023-2027）
 
-我持续关注 AI+教育 与出海产品，尤其对AI Tutor、AI口语陪练和个性化学习等场景感兴趣。我期待的不只是“用AI做教育”，更希望探索如何通过大模型与Agent，打造更自然、更个性化，并能够服务不同市场用户的产品体验。
+我持续关注AI+教育与出海产品，尤其对AI Tutor、AI口语陪练和个性化学习等场景感兴趣。我期待的不只是“用AI做教育”，更希望探索如何通过大模型与Agent，打造更自然、更个性化，并能够服务不同市场用户的产品体验。
 
 我也喜欢用AI把想法快速变成产品。借助Codex、Cursor等工具，我会通过 Vibe Coding快速完成原型验证、功能开发和用户测试。我希望加入真正将AI融入教育场景的团队，参与并推动产品从想法验证到0→1落地的全过程。
 
@@ -66,7 +66,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
           <em>2025.09 - 2025.12</em><br>
           交换生<br>
           <span style="color:#888;">课程：机器学习、软件工程、人工智能搜索与推理.</span>
-          <a href="https://www.bilibili.com" target="_blank"><em>[演讲视频]</em></a>
+          <a href="https://www.bilibili.com/video/BV1dBt767EL7/?spm_id_from=333.1387.homepage.video_card.click&vd_source=85357a67d62d4b23c00a40a3daea66fd" target="_blank"><em>[演讲视频]</em></a>
       </div>
   </div>
 

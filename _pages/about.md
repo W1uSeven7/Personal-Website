@@ -30,6 +30,8 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
 
 <li><span class="news-date"><em>2026.04</em></span> 📈📈 第一次接触基金理财，开始学习长期投资与资产配置.</li>
 
+<li><span class="news-date"><em>2026.03</em></span> 🧑‍🏫🧑‍🏫 继续深入体验教育行业，担任幼儿园英语老师，用全英文教学点燃孩子们的学习热情.</li>
+
 <li><span class="news-date"><em>2026.01</em></span> 💼💼 来到上海担任托福雅思助教和英语家教，深入教育行业，体验AI+教育方向的工作.</li>
 
 <li><span class="news-date"><em>2025.09</em></span> 🌎🌎 在 UCSD 开启交换生活，看见更大的世界.</li>

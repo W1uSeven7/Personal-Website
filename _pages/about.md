@@ -60,7 +60,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
       <div class="experience-info">
           <strong>极客跳动</strong><br>
           <em>2026.07 - 至今</em><br>
-          产品实习生<br>
+          产品经理实习生<br>
           <span style="color:#888;">负责一款面向海外市场的 AI+家庭育儿 App的产品迭代，覆盖宝宝成长记录、育儿知识问答及AI个性化服务等场景，探索AI在家庭教育与儿童成长中的应用.</span>
       </div>
   </div>
@@ -70,8 +70,8 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
       <div class="experience-info">
           <strong>加州大学圣地亚哥分校（UCSD）</strong><br>
           <em>2025.09 - 2025.12</em><br>
-          交换生<br>
-          <span style="color:#888;">课程：机器学习、软件工程、人工智能搜索与推理.</span>
+          访问学生<br>
+          <span style="color:#888;">课程：机器学习、软件工程、公共演讲.</span>
           <a href="https://www.bilibili.com/video/BV1dBt767EL7/?spm_id_from=333.1387.homepage.video_card.click&vd_source=85357a67d62d4b23c00a40a3daea66fd" target="_blank"><em>[演讲视频]</em></a>
       </div>
   </div>
@@ -82,7 +82,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
           <strong>叫叫阅读</strong><br>
           <em>2025.07 - 2025.09</em><br>
          AI产品研发实习生<br>
-          <span style="color:#888;">负责一款海外儿童英语教育 App 的产品与增长工作，参与题型设计、用户访谈及广告投放策略优化；同时借助 Codex、Cursor 搭建自动化广告投放系统，打通广告创建、修改与投放流程，将操作耗时缩短至秒级.</span>
+          <span style="color:#888;">负责一款海外儿童英语教育 App 的产品与增长工作，参与题型设计、用户访谈及广告投放策略优化；同时借助 Cursor 搭建自动化广告投放系统，打通广告创建、修改与投放流程，将操作耗时缩短至秒级.</span>
       </div>
   </div>
 
@@ -92,7 +92,7 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
           <strong>西南大学</strong><br>
           <em>2023.09 - 至今</em><br>
           GPA:3.93/5, Rank:Top%10; 在商贸学院攻读管理学学位<br>
-          <span style="color:#888;">课程：数据库应用与实践，Python数据分析与编程，Web前端开发，管理信息系统.</span>
+          <span style="color:#888;">课程：数据库应用与实践，Python数据分析与编程，Web前端开发，数据结构与算法.</span>
       </div>
   </div>
 </div>

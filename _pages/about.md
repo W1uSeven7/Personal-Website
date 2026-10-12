@@ -22,6 +22,8 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
 <div class="news-box">
   <ul class="news-list">
 
+<li><span class="news-date"><em>2026.09</em></span> 🎉🎉 九月底，小程序正式上线！</li>
+
 <li><span class="news-date"><em>2026.07</em></span> 🚀🚀 开启第二段实习，参与出海业务，积极拥抱AI新变化.</li>
 
 <li><span class="news-date"><em>2026.06</em></span> 🌟🌟 基金收益突破2k.</li>
@@ -110,10 +112,9 @@ Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业
         <a href="https://github.com/W1uSeven7" target="_blank"><strong>吴琦</strong></a>,
         <a href="https://github.com/xiaoxiaoyuweixie" target="_blank"><strong>肖瑞航</strong></a>.
       </div>
-      和肖瑞航一起合作，完成从问卷调研—需求文档编写—原型设计—界面开发—用户内测—功能迭代这个从0到1的过程，并在不断完善中，为后续的正式上线做准备。
+      作为产品负责人，全程主导项目从 0 到 1 落地，涵盖问卷调研、需求文档编写、原型设计、界面开发、用户内测与功能迭代。项目已正式上线，可在微信搜索“校易通CampusX”体验。
       <br>
       <b><i style="color:#83a1c7;">Project &nbsp;</i></b>
-      <a href="https://github.com/xiaoxiaoyuweixie/CampusX"><em>[code]</em></a>
       <a href="https://www.figma.com/design/ypmVzm832Ho7LpKxfyzsnO/Campusx%E5%8E%9F%E5%9E%8B?t=mW0eME4PG2sSAFbx-0"><em>[原型]</em></a>
     </div>
   </div>

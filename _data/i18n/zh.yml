@@ -1,0 +1,140 @@
+lang: zh-CN
+locale: zh_CN
+home_path: /
+resume_path: /files/wuqi_resume.pdf
+seo:
+  title: "吴琦 | AI 产品 Builder"
+  description: "吴琦的个人主页：AI 产品 Builder，分享产品与研发实习、校易通CampusX及自动化工具的实践经历。"
+navigation:
+  news: 最新动态
+  experience: 教育/实习经历
+  projects: 项目经历
+  awards: 荣誉奖项
+  services: 学生服务
+  talks: 技能优势
+  resume: 个人简历
+author:
+  name: 吴琦
+  bio: 先爱生活，再做产品
+  location: 中国重庆市
+  employer: 西南大学
+ui:
+  navigation: 主导航
+  menu: 更多导航
+  language: 选择语言
+  contact: 联系方式
+  email: Email
+  copied: 已复制
+  wechat: 微信
+  rednote: 小红书
+  present: 至今
+  members: 成员：
+  project: Project
+  prototype: 原型
+  code: code
+  video: 演讲视频
+  sitemap: 网站地图
+  follow: 关注：
+  powered_by: 技术支持：
+  template_by: 模板设计：
+  image_loading: 正在加载图片 #%curr%…
+  image_error: '无法加载<a href="%url%">图片 #%curr%</a>。'
+  image_close: 关闭（Esc）
+  image_previous: 上一张（左方向键）
+  image_next: 下一张（右方向键）
+  image_counter: "%curr% / %total%"
+intro:
+  greeting: 你好
+  welcome: 欢迎来到我的主页！
+  paragraphs:
+    - "Hi！我是吴琦，目前就读于西南大学信息管理与信息系统专业（2023-2027）。"
+    - "经历一段研发实习和一段产品实习后，我更明确了自己的方向：成为一名AI产品Builder。对我来说，这意味着把“为什么做”和“怎么做”放在一起思考，从真实需求出发，亲手把方案做成可用的产品，并根据用户反馈持续打磨。"
+    - "我有产品设计与编程的实践基础，也习惯用Codex、Cursor等AI工具完成原型验证、功能开发与迭代。在实习中，我搭建了自动化广告投放系统，减少重复操作；在小程序项目中，我作为产品负责人，主导产品从需求调研、原型设计、开发测试走到正式上线。这些经历让我更重视用可运行的版本验证判断，在真实使用中发现问题。"
+    - "我持续关注AI原生产品、Agent和效率工具，尤其对教育与出海场景感兴趣。我相信，AI让尝试一个想法的成本更低，而Builder需要想清楚需求的价值、模型的能力边界，以及如何衡量产品是否有效。我希望结合自己的产品视角、开发能力和海外学习经历，与团队一起做出实用、可靠、值得持续使用的产品。"
+news:
+  campusx_launch: "九月底，小程序正式上线！"
+  geekdance: "开启第二段实习，参与出海业务，积极拥抱AI新变化."
+  investment_milestone: "基金收益突破2k."
+  campusx_mvp: "合作完成校园二手交易微信小程序，从产品设计到开发落地，实现第一个完整 MVP."
+  investment_start: "第一次接触基金理财，开始学习长期投资与资产配置."
+  teaching: "继续深入体验教育行业，担任幼儿园英语老师，用全英文教学点燃孩子们的学习热情."
+  tutoring: "来到上海担任托福雅思助教和英语家教，深入教育行业，体验AI+教育方向的工作."
+  ucsd: "在 UCSD 开启交换生活，看见更大的世界."
+  automation: "基于 Cursor、ChatGPT开发自动化广告投放系统，第一次真正感受到 AI 改变开发方式."
+  first_internship: "开启 AI 产品实习，正式接触 Vibe Coding，开始探索产品开发的新范式."
+  tetris: "完成俄罗斯方块小游戏开发，独立实现游戏逻辑、界面设计与数据存储."
+  relationship: "开启人生第一段恋爱，也学会了爱与成长."
+  university: "一切故事，从西南大学开始."
+experiences:
+  geekdance:
+    name: 极客跳动
+    alt: 极客跳动标志
+    role: 产品经理实习生
+    description: "负责一款面向海外市场的 AI+家庭育儿 App的产品迭代，覆盖宝宝成长记录、育儿知识问答及AI个性化服务等场景，探索AI在家庭教育与儿童成长中的应用."
+  ucsd:
+    name: 加州大学圣地亚哥分校（UCSD）
+    alt: 加州大学圣地亚哥分校标志
+    role: 访问学生
+    description: "课程：机器学习、软件工程、公共演讲."
+  jojo:
+    name: 叫叫阅读
+    alt: 叫叫阅读标志
+    role: AI产品研发实习生
+    description: "负责一款海外儿童英语教育 App 的产品与增长工作，参与题型设计、用户访谈及广告投放策略优化；同时借助 Cursor 搭建自动化广告投放系统，打通广告创建、修改与投放流程，将操作耗时缩短至秒级."
+  swu:
+    name: 西南大学
+    alt: 西南大学标志
+    role: "GPA:3.93/5, Rank:Top%10; 在商贸学院攻读管理学学位"
+    description: "课程：数据库应用与实践，Python数据分析与编程，Web前端开发，数据结构与算法."
+members:
+  wuqi: 吴琦
+  xiaoruihang: 肖瑞航
+projects:
+  campusx:
+    title: 校园二手交易小程序
+    alt: 校园二手交易小程序截图
+    description: "作为产品负责人，全程主导项目从 0 到 1 落地，涵盖问卷调研、需求文档编写、原型设计、界面开发、用户内测与功能迭代。项目已正式上线，可在微信搜索“校易通CampusX”体验。"
+  tetris:
+    title: 新版俄罗斯方块小游戏
+    alt: 新版俄罗斯方块小游戏截图
+    description: "一个基于 Pygame 开发的俄罗斯方块项目，支持登录注册、排行榜、无尽模式、限时模式、双人对战和人机对战（AI）。"
+awards:
+  national: { title: 国家奖学金, description: 国家级荣誉奖项 }
+  scholarship: { title: 西南大学一等奖学金, description: 校级奖学金 }
+  student: { title: "西南大学“三好学生”", description: 综合荣誉称号 }
+  lanqiao: { title: 蓝桥杯 C++ 赛道重庆市二等奖, description: 程序设计竞赛 }
+services:
+  entrepreneurship:
+    title: 西南大学创新创业部部长
+    description: 参与组织创新创业相关活动，推动学生项目交流与落地。
+  class_assistant:
+    title: 2024级管理科学与工程专业班级助理
+    description: 协助新生适应大学学习生活，承担班级沟通与事务支持工作。
+  volunteer:
+    title: 班级志愿服务委员
+    description: 负责志愿服务信息对接与活动组织，支持班级公共事务。
+skills:
+  product:
+    title: 产品设计
+    description: 熟悉 Figma 与 PRD 撰写，能够将业务需求转化为结构化产品方案并辅助落地。
+    tags: [Figma, PRD, 原型设计]
+  ai:
+    title: AI 工具
+    description: 熟练使用 Cursor、Codex 等工具，通过 VibeCoding 完成自动化系统与微信小程序开发。
+    tags: [Cursor, Codex, ChatGPT]
+  development:
+    title: 编程开发
+    description: 熟悉前端三件套以及Python，能够快速将产品想法转化为可交互Demo，具备功能验证与自动化脚本编写能力。
+    tags: [JavaScript, Python, 自动化脚本]
+  data:
+    title: 数据分析
+    description: 熟练使用 Python 与 SQL 进行数据清洗、分析和可视化，支持业务决策与优化。
+    tags: [pandas, numpy, SQL]
+  english:
+    title: 英语能力
+    description: 拥有四个月海外学习经历，托福 95、六级 619，口语流利，英语可作为工作语言。
+    tags: [TOEFL 95, CET-6 619, 英文沟通]
+  collaboration:
+    title: 沟通协作
+    description: 具备跨团队协作意识，能够对接商务、研发等角色，推动项目落地并及时反馈优化。
+    tags: [跨团队协作, 项目推进, 反馈优化]

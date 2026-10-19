@@ -66,6 +66,7 @@
     .experience-logo {
         width: 60px;
         height: 60px;
+        flex-shrink: 0;
         margin-right: 20px;
         border-radius: 8px;
         object-fit: contain;
@@ -399,6 +400,7 @@
             font-family: 'Permanent Marker', cursive;
             text-align: center;
             color: #ca6f6f;
+            line-height: 1.35;
         }
         div.markdown-body a,a {
             text-decoration: none !important;
@@ -423,3 +425,18 @@
   .far, .fa-regular {
     font-weight: 400 !important;
   }
+
+/* English names and labels can be longer than their Chinese equivalents. */
+.experience-info,
+.project-card > div > div:last-child,
+.award-content,
+.service-content,
+.skill-card {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.news-box:focus-visible {
+    outline: 2px solid #83a1c7;
+    outline-offset: 2px;
+}

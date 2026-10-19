@@ -3,6 +3,7 @@
    ========================================================================== */
 
 $(document).ready(function(){
+  var ui = window.siteI18n || {};
   // Sticky footer
   var bumpIt = function() {
       $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
@@ -48,7 +49,7 @@ $(document).ready(function(){
     } else {
       // unfix
       Stickyfill.stop();
-      $(".author__urls").hide();
+      $(".author__urls").toggle($(".author__urls-wrapper").hasClass("is-open"));
     }
   };
 
@@ -58,14 +59,8 @@ $(document).ready(function(){
     stickySideBar();
   });
 
-  // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
-
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({offset: -65});
+  $("a:not([data-language-switch])").smoothScroll({offset: -65});
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
@@ -73,14 +68,18 @@ $(document).ready(function(){
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
     type: 'image',
-    tLoading: 'Loading image #%curr%...',
+    tLoading: ui.image_loading || 'Loading image #%curr%...',
+    tClose: ui.image_close || 'Close (Esc)',
     gallery: {
       enabled: true,
+      tPrev: ui.image_previous || 'Previous (Left arrow key)',
+      tNext: ui.image_next || 'Next (Right arrow key)',
+      tCounter: ui.image_counter || '%curr% / %total%',
       navigateByImgClick: true,
       preload: [0,1] // Will preload 0 - before current, and 1 after the current image
     },
     image: {
-      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
+      tError: ui.image_error || '<a href="%url%">Image #%curr%</a> could not be loaded.',
     },
     removalDelay: 500, // Delay in milliseconds before popup is removed
     // Class that is added to body when popup is open.

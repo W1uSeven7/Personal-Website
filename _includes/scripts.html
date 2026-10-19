@@ -1,9 +1,22 @@
+{% include i18n.html %}
+<script>window.siteI18n = {{ site_i18n.ui | jsonify }};</script>
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script src="{{ '/assets/js/language-switch.js' | relative_url }}" defer></script>
 <script>
 (function() {
+  function setContactOpen(wrapper, open) {
+    var button = wrapper.querySelector('button');
+    var list = wrapper.querySelector('.author__urls');
+    wrapper.classList.toggle('is-open', open);
+    button.setAttribute('aria-expanded', String(open));
+    if (window.getComputedStyle(button).display !== 'none') {
+      list.style.display = open ? 'block' : 'none';
+    }
+  }
+
   function closeAll() {
     document.querySelectorAll('.author__urls-wrapper.is-open').forEach(function(wrapper) {
-      wrapper.classList.remove('is-open');
+      setContactOpen(wrapper, false);
     });
   }
 
@@ -16,7 +29,7 @@
       button.addEventListener('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
-        wrapper.classList.toggle('is-open');
+        setContactOpen(wrapper, !wrapper.classList.contains('is-open'));
       });
     });
 
@@ -36,21 +49,20 @@
         if (!email) return;
 
         function showCopied() {
-          var oldText = link.getAttribute('data-original-text') || link.textContent.trim();
+          var label = link.querySelector('.email-label');
+          var oldText = link.getAttribute('data-original-text') || label.textContent.trim();
           link.setAttribute('data-original-text', oldText);
           link.classList.add('is-copied');
-          link.lastChild.textContent = ' 已复制';
+          label.textContent = link.getAttribute('data-copied-label');
 
           window.clearTimeout(link._copyTimer);
           link._copyTimer = window.setTimeout(function() {
             link.classList.remove('is-copied');
-            link.lastChild.textContent = oldText;
+            label.textContent = oldText;
           }, 1600);
         }
 
-        if (navigator.clipboard && window.isSecureContext) {
-          navigator.clipboard.writeText(email).then(showCopied);
-        } else {
+        function fallbackCopy() {
           var textarea = document.createElement('textarea');
           textarea.value = email;
           textarea.setAttribute('readonly', '');
@@ -58,9 +70,15 @@
           textarea.style.left = '-9999px';
           document.body.appendChild(textarea);
           textarea.select();
-          document.execCommand('copy');
+          var copied = document.execCommand('copy');
           document.body.removeChild(textarea);
-          showCopied();
+          if (copied) showCopied();
+        }
+
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(email).then(showCopied).catch(fallbackCopy);
+        } else {
+          fallbackCopy();
         }
       });
     });

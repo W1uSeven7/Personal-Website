@@ -1,11 +1,10 @@
 {% include base_path %}
+{% include i18n.html %}
 
 {% if site.author.github or site.author.bitbucket %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+    <li><strong>{{ site_i18n.ui.follow | escape }}</strong></li>
     {% if site.author.github %}
       <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
@@ -16,4 +15,4 @@
 </div>
 {% endif %}
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>. Template designed by <a href="https://selen-suyue.github.io" rel="nofollow">Selen-Suyue</a>.</div>
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site_i18n.author.name | escape }}. {{ site_i18n.ui.powered_by | escape }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>. {{ site_i18n.ui.template_by | escape }} <a href="https://selen-suyue.github.io" rel="nofollow">Selen-Suyue</a>.</div>

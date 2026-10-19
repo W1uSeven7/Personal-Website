@@ -1,25 +1,32 @@
 # main links links
 
 main:
-  - title: "最新动态"
+  - key: news
+    title: "最新动态"
     url: "/#news"
 
-  - title: "教育/实习经历"
+  - key: experience
+    title: "教育/实习经历"
     url: "/#experience"
 
-  - title: "项目经历"
+  - key: projects
+    title: "项目经历"
     url: "/#projects"
 
-  - title: "荣誉奖项"
+  - key: awards
+    title: "荣誉奖项"
     url: "/#awards"
 
-  - title: "学生服务"
+  - key: services
+    title: "学生服务"
     url: "/#services"
     
-  - title: "技能优势"
+  - key: talks
+    title: "技能优势"
     url: "/#talks"
     
-  - title: "个人简历"
+  - key: resume
+    title: "个人简历"
     url: "/files/wuqi_resume.pdf"
 
   # - title: "CV-Cn"

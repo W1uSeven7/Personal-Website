@@ -10,6 +10,7 @@ Example：[w1useven7.github.io](https://w1useven7.github.io/Personal-Website/).
 - Single-page navigation for news, experience, projects, awards, services, and talks
 - Custom homepage styling through `assets/css/home.css`
 - CV link support through the navigation menu
+- Chinese and English homepages with a section-preserving language switch
 - Social profile fields managed from `_config.yml`
 - GitHub Pages compatible Jekyll setup
 - Sitemap and feed support through Jekyll plugins
@@ -21,6 +22,8 @@ Example：[w1useven7.github.io](https://w1useven7.github.io/Personal-Website/).
 ├── _config.yml              # Main site configuration and author metadata
 ├── _data/
 │   ├── navigation.yml       # Header navigation links
+│   ├── home.yml             # Shared homepage dates, images, links, and ordering
+│   ├── i18n/                # Chinese and English content
 │   ├── authors.yml          # Optional author data
 │   └── ui-text.yml          # Theme UI text
 ├── _includes/               # Reusable Liquid partials
@@ -64,9 +67,9 @@ bundle exec jekyll serve
 ```
 
 Then open the local URL shown in the terminal, usually:
-python -m http.server 5500
 ```text
-http://127.0.0.1:4000/
+http://127.0.0.1:4000/Personal-Website/
+http://127.0.0.1:4000/Personal-Website/en/
 ```
 
 ### Build the Site
@@ -83,7 +86,10 @@ The generated files will be written to `_site/`.
 
 ### Basic Site Information
 
-Edit `_config.yml` to update the site title, description, URL, author name, biography, affiliation, location, email, avatar, and social links.
+Edit `_config.yml` to update the site title, URL, email, avatar, and social links.
+Localized author name, biography, affiliation, location, homepage title, and
+description are maintained in `_data/i18n/zh.yml` and `_data/i18n/en.yml`.
+Author text in `_config.yml` remains the theme's fallback configuration.
 
 Important fields include:
 
@@ -102,13 +108,17 @@ author:
 
 ### Homepage Content
 
-The homepage content is mainly maintained in:
+The homepage text is maintained in:
 
 ```text
-_pages/about.md
+_data/i18n/zh.yml
+_data/i18n/en.yml
 ```
 
-Update this file to edit sections such as news, experience, projects, awards, services, talks, and the introductory text.
+Update both files to edit sections such as news, experience, projects, awards,
+services, skills, and the introductory text. Shared dates, images, links, and
+ordering live in `_data/home.yml`. The two files in `_pages/` only configure
+the routes and include the shared `_includes/home.html` layout.
 
 ### Navigation
 
@@ -122,13 +132,18 @@ For example:
 
 ```yaml
 main:
-  - title: "News"
+  - key: news
+    title: "News"
     url: "/#news"
-  - title: "Experience"
+  - key: experience
+    title: "Experience"
     url: "/#experience"
-  - title: "CV-En"
-    url: "/files/weidongtang_resume.pdf"
+  - key: resume
+    title: "Resume"
+    url: "/files/wuqi_resume.pdf"
 ```
+
+Each `key` maps to a label under `navigation` in both language files.
 
 ### Images and Media
 
@@ -141,7 +156,7 @@ images/
 Reference them from pages using paths such as:
 
 ```html
-<img src="images/example.png" alt="Example image">
+<img src="{{ '/images/example.png' | relative_url }}" alt="Example image">
 ```
 
 ### JavaScript and CSS
@@ -187,13 +202,47 @@ baseurl: "/<repository-name>"
 
 Before publishing, consider updating:
 
-- Author name, bio, institution, location, and email in `_config.yml`
+- Email, social links, and avatar in `_config.yml`; localized name and bio in `_data/i18n/`
 - Avatar and profile images in `images/`
 - Navigation links in `_data/navigation.yml`
-- Homepage sections in `_pages/about.md`
+- Homepage text in `_data/i18n/zh.yml` and `_data/i18n/en.yml`
 - CV file and CV link
 - Project descriptions and external links
 - Analytics or site verification settings, if needed
+
+## Bilingual Homepage
+
+The Chinese homepage remains at `/`; the English homepage is at `/en/`.
+Both paths include the configured `baseurl` when deployed. Language is chosen
+by the URL, so English links can be shared directly and remain English after a
+refresh. The language switch preserves the section currently being viewed.
+
+- `_data/i18n/zh.yml`: Chinese copy, navigation, sidebar text, and UI messages.
+- `_data/i18n/en.yml`: corresponding English copy using the same keys.
+- `_data/home.yml`: shared dates, images, project links, and section ordering.
+- `_includes/home.html`: shared homepage layout.
+- `_pages/about.md` and `_pages/about-en.md`: route and language configuration.
+
+To add a news item, add its ID, date, and icon to `_data/home.yml`, then add the
+same ID under `news` in both language files. Keep the keys in both files aligned.
+Screenshots and external sites are not automatically translated. Each homepage
+links to its matching resume: `files/wuqi_resume.pdf` for Chinese and
+`files/wuqi_resume_en.pdf` for English. Replace these files when updating resumes;
+if a filename changes, also update `resume_path` in its language file.
+
+Build and check both languages (UTF-8 also avoids macOS Sass encoding errors):
+
+```bash
+LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll build
+LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec ruby _tests/i18n.rb
+```
+
+After editing `_main.js` or a navigation plugin, regenerate the checked-in bundle:
+
+```bash
+npm install
+npm run build:js
+```
 
 ## License
 

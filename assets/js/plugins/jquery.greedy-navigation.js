@@ -1,72 +1,58 @@
 /*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
-*/
+ * Responsive overflow navigation. Language links live outside this container.
+ */
+(function() {
+  var $nav = $('#site-nav');
+  var $btn = $nav.children('.nav-toggle');
+  var $vlinks = $nav.children('.visible-links');
+  var $hlinks = $nav.children('.hidden-links');
 
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('#site-nav .hidden-links');
+  function closeMenu() {
+    $hlinks.addClass('hidden');
+    $btn.removeClass('close').attr('aria-expanded', 'false');
+  }
 
-var breaks = [];
+  function updateNav() {
+    $vlinks.append($hlinks.children());
+    $btn.addClass('hidden');
+    var availableSpace = $nav.width();
 
-function updateNav() {
-
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-  // The visible list is overflowing the nav
-  if($vlinks.width() > availableSpace) {
-
-    // Record the width of the list
-    breaks.push($vlinks.width());
-
-    // Move item to the hidden list
-    $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
-
-    // Show the dropdown btn
-    if($btn.hasClass('hidden')) {
+    if ($vlinks.outerWidth() > availableSpace) {
       $btn.removeClass('hidden');
+      availableSpace -= $btn.outerWidth() + 12;
+
+      // Never move the site title or recurse when no more links can collapse.
+      var $items = $vlinks.children(':not(.masthead__menu-item--lg)');
+      while ($vlinks.outerWidth() > availableSpace && $items.length) {
+        $items.last().prependTo($hlinks);
+        $items = $vlinks.children(':not(.masthead__menu-item--lg)');
+      }
     }
 
-  // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    if(availableSpace > breaks[breaks.length-1]) {
-
-      // Move the item to the visible list
-      $hlinks.children().first().appendTo($vlinks);
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if(breaks.length < 1) {
+    if (!$hlinks.children().length) {
       $btn.addClass('hidden');
-      $hlinks.addClass('hidden');
+      closeMenu();
     }
+    $btn.attr('count', $hlinks.children().length);
   }
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
+  $btn.on('click', function() {
+    var open = $hlinks.hasClass('hidden');
+    $hlinks.toggleClass('hidden', !open);
+    $btn.toggleClass('close', open).attr('aria-expanded', String(open));
+  });
 
-  // Recur if the visible list is still overflowing the nav
-  if($vlinks.width() > availableSpace) {
-    updateNav();
-  }
-
-}
-
-// Window listeners
-
-$(window).resize(function() {
+  $hlinks.on('click', 'a', closeMenu);
+  $(document).on('click', function(event) {
+    if (!$nav[0].contains(event.target)) closeMenu();
+  });
+  $(document).on('keydown', function(event) {
+    if (event.key === 'Escape' && !$hlinks.hasClass('hidden')) {
+      closeMenu();
+      $btn.trigger('focus');
+    }
+  });
+  $(window).on('resize', updateNav);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(updateNav);
   updateNav();
-});
-
-$btn.on('click', function() {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-});
-
-updateNav();
+})();

@@ -1,22 +1,33 @@
 {% include base_path %}
+{% include i18n.html %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+      <nav id="site-nav" class="greedy-nav" aria-label="{{ site_i18n.ui.navigation | escape }}">
+        <button class="nav-toggle hidden" type="button" aria-label="{{ site_i18n.ui.menu | escape }}" aria-expanded="false" aria-controls="overflow-nav"><span class="navicon" aria-hidden="true"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ site_i18n.home_path | relative_url }}">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
+            {% if link.key == 'resume' %}
+              {% assign navigation_url = site_i18n.resume_path | default: link.url | relative_url %}
+            {% elsif link.url contains 'http' %}
+              {% assign navigation_url = link.url %}
+            {% elsif link.url contains '/#' %}
+              {% assign section_id = link.url | split: '#' | last %}
+              {% assign navigation_url = site_i18n.home_path | append: '#' | append: section_id | relative_url %}
+            {% else %}
+              {% assign navigation_url = link.url | relative_url %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ navigation_url }}">{{ site_i18n.navigation[link.key] | default: link.title | escape }}</a></li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="overflow-nav" class="hidden-links hidden"></ul>
+      </nav>
+      <nav class="language-switch" aria-label="{{ site_i18n.ui.language | escape }}">
+        <a href="{{ '/' | relative_url }}" lang="zh-CN" hreflang="zh-CN"{% if page.translation_key == 'home' %} data-language-switch{% endif %}{% if site_language == 'zh' %} aria-current="true"{% endif %}>中文</a>
+        <span aria-hidden="true">|</span>
+        <a href="{{ '/en/' | relative_url }}" lang="en" hreflang="en"{% if page.translation_key == 'home' %} data-language-switch{% endif %}{% if site_language == 'en' %} aria-current="true"{% endif %}>EN</a>
       </nav>
     </div>
   </div>

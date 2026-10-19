@@ -1,0 +1,107 @@
+{% include i18n.html %}
+<h1 class="main-heading">{{ site_i18n.intro.greeting | escape }}<img src="{{ '/images/Hi.gif' | relative_url }}" width="40" height="40" alt=""> {{ site_i18n.intro.welcome | escape }}</h1>
+{% for paragraph in site_i18n.intro.paragraphs %}
+<p>{{ paragraph | escape }}</p>
+{% endfor %}
+
+<div id="news" class="section-anchor"></div>
+<h2>{{ site_i18n.navigation.news | escape }}</h2>
+<div class="news-box" tabindex="0" role="region" aria-label="{{ site_i18n.navigation.news | escape }}">
+  <ul class="news-list">
+    {% for item in site.data.home.news %}
+    <li><span class="news-date"><em>{{ item.date }}</em></span> <span aria-hidden="true">{{ item.icon }}</span> {{ site_i18n.news[item.id] | escape }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div id="experience" class="section-anchor"></div>
+<h2>{{ site_i18n.navigation.experience | escape }}</h2>
+<div class="experience-container">
+  {% for item in site.data.home.experiences %}
+  {% assign experience = site_i18n.experiences[item.id] %}
+  <div class="experience-card">
+    <img src="{{ item.image | relative_url }}" alt="{{ experience.alt | escape }}" class="experience-logo" loading="lazy">
+    <div class="experience-info">
+      <strong>{{ experience.name | escape }}</strong><br>
+      <em>{{ item.start }} - {{ item.end | default: site_i18n.ui.present }}</em><br>
+      {{ experience.role | escape }}<br>
+      <span style="color:#888;">{{ experience.description | escape }}</span>
+      {% if item.video %}
+      <a href="{{ item.video | escape }}" target="_blank" rel="noopener"><em>[{{ site_i18n.ui.video | escape }}]</em></a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div id="projects" class="section-anchor"></div>
+<h2>{{ site_i18n.navigation.projects | escape }}</h2>
+{% for item in site.data.home.projects %}
+{% assign project = site_i18n.projects[item.id] %}
+<div class="project-card" data-category="project">
+  <div style="display: flex; align-items: center;">
+    <div class="pub-media-rotator project-media" data-interval="4000">
+      <img src="{{ item.image | relative_url }}" alt="{{ project.alt | escape }}" loading="lazy">
+    </div>
+    <div>
+      <strong>{{ project.title | escape }}</strong><br>
+      <div class="project-author">
+        {{ site_i18n.ui.members | escape }}
+        {% for member in item.members %}
+        <a href="{{ site.data.home.members[member] }}" target="_blank" rel="noopener"><strong>{{ site_i18n.members[member] | escape }}</strong></a>{% unless forloop.last %}, {% else %}.{% endunless %}
+        {% endfor %}
+      </div>
+      {{ project.description | escape }}
+      <br>
+      <b><i style="color:#83a1c7;">{{ site_i18n.ui.project | escape }} &nbsp;</i></b>
+      {% for link in item.links %}
+      <a href="{{ link.url | escape }}"><em>[{{ site_i18n.ui[link.label] | escape }}]</em></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<div id="awards" class="section-anchor"></div>
+<h2>{{ site_i18n.navigation.awards | escape }}</h2>
+<div class="award-grid">
+  {% for item in site.data.home.awards %}
+  {% assign award = site_i18n.awards[item.id] %}
+  <div class="award-card{% if item.highlight %} award-card--highlight{% endif %}">
+    <div class="award-icon" aria-hidden="true">{{ item.icon }}</div>
+    <div class="award-content">
+      <span class="award-date">{{ item.date }}</span>
+      <strong>{{ award.title | escape }}</strong>
+      <p>{{ award.description | escape }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div id="services" class="section-anchor"></div>
+<h2>{{ site_i18n.navigation.services | escape }}</h2>
+<div class="service-timeline">
+  {% for item in site.data.home.services %}
+  {% assign service = site_i18n.services[item.id] %}
+  <div class="service-item">
+    <span class="service-date">{{ item.start }} – {{ item.end }}</span>
+    <div class="service-content">
+      <strong>{{ service.title | escape }}</strong>
+      <p>{{ service.description | escape }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div id="talks" class="section-anchor"></div>
+<h2>{{ site_i18n.navigation.talks | escape }}</h2>
+<div class="skill-grid">
+  {% for id in site.data.home.skills %}
+  {% assign skill = site_i18n.skills[id] %}
+  <div class="skill-card">
+    <div class="skill-title">{{ skill.title | escape }}</div>
+    <p>{{ skill.description | escape }}</p>
+    <div class="skill-tags">{% for tag in skill.tags %}<span>{{ tag | escape }}</span>{% endfor %}</div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,140 @@
+lang: en
+locale: en_US
+home_path: /en/
+resume_path: /files/wuqi_resume_en.pdf
+seo:
+  title: "Qi Wu | AI Product Builder"
+  description: "Qi Wu's portfolio: AI product building, product and development internships, the CampusX mini program, and automation tools."
+navigation:
+  news: Updates
+  experience: Education & Experience
+  projects: Projects
+  awards: Honors & Awards
+  services: Campus Roles
+  talks: Skills
+  resume: Resume
+author:
+  name: Qi Wu
+  bio: Live fully. Build thoughtfully.
+  location: Chongqing, China
+  employer: Southwest University
+ui:
+  navigation: Main navigation
+  menu: More navigation
+  language: Choose language
+  contact: Contact
+  email: Email
+  copied: Copied
+  wechat: WeChat
+  rednote: RedNote
+  present: Present
+  members: "Team:"
+  project: Project
+  prototype: Prototype
+  code: code
+  video: Speech video
+  sitemap: Sitemap
+  follow: "Follow:"
+  powered_by: Powered by
+  template_by: Template designed by
+  image_loading: "Loading image #%curr%..."
+  image_error: '<a href="%url%">Image #%curr%</a> could not be loaded.'
+  image_close: Close (Esc)
+  image_previous: Previous (Left arrow key)
+  image_next: Next (Right arrow key)
+  image_counter: "%curr% / %total%"
+intro:
+  greeting: Hello
+  welcome: Welcome to my website!
+  paragraphs:
+    - "Hi! I'm Qi Wu, an undergraduate in Information Management and Information Systems at Southwest University (2023-2027)."
+    - "After one development internship and one product internship, I have a clearer sense of where I want to go: becoming an AI Product Builder. To me, that means thinking about why something should be built alongside how to build it, starting with real needs, turning ideas into usable products, and improving them through user feedback."
+    - "I have hands-on experience in both product design and programming, and use AI tools such as Codex and Cursor to prototype, develop, and iterate. During an internship, I built an advertising automation system to reduce repetitive work. As product lead for a WeChat mini program, I guided the product from user research and prototyping through development, testing, and launch. These experiences taught me to test assumptions with working software and learn from real use."
+    - "I follow AI-native products, agents, and productivity tools, with a particular interest in education and products for international markets. AI makes ideas cheaper to test; a Builder still needs to understand the value of a problem, the limits of a model, and how to measure whether a product works. I hope to bring together my product perspective, development skills, and study-abroad experience to build useful, reliable products that people keep using."
+news:
+  campusx_launch: "CampusX officially launched in late September!"
+  geekdance: "Started my second internship, working on products for international markets and exploring new opportunities in AI."
+  investment_milestone: "Investment fund returns passed RMB 2,000."
+  campusx_mvp: "Co-built a campus secondhand marketplace on WeChat, taking my first complete MVP from product design to implementation."
+  investment_start: "Began investing in funds and learning about long-term investing and asset allocation."
+  teaching: "Continued exploring education as a kindergarten English teacher, inspiring children through English-only lessons."
+  tutoring: "Moved to Shanghai to work as a TOEFL/IELTS teaching assistant and English tutor, exploring education and AI-assisted learning."
+  ucsd: "Began my study-abroad experience at UC San Diego and discovered a wider world."
+  automation: "Built an advertising automation system with Cursor and ChatGPT, experiencing firsthand how AI changes software development."
+  first_internship: "Started my first AI product internship and began exploring vibe coding and new ways to build products."
+  tetris: "Built a Tetris game, independently implementing the game logic, interface, and data storage."
+  relationship: "Started my first relationship and began learning about love and personal growth."
+  university: "The story began at Southwest University."
+experiences:
+  geekdance:
+    name: GeekDance
+    alt: GeekDance logo
+    role: Product Management Intern
+    description: "Iterating on an AI-powered parenting app for international markets, covering baby growth tracking, parenting Q&A, and personalized AI services. Exploring AI applications in family education and child development."
+  ucsd:
+    name: University of California, San Diego (UCSD)
+    alt: UC San Diego logo
+    role: Visiting Student
+    description: "Courses: Machine Learning, Software Engineering, and Public Speaking."
+  jojo:
+    name: JOJO Reading
+    alt: JOJO Reading logo
+    role: AI Product Development Intern
+    description: "Worked on product and growth for a children's English-learning app in international markets, including exercise design, user interviews, and advertising strategy. Used Cursor to build an advertising automation system covering ad creation, updates, and deployment, reducing operations to seconds."
+  swu:
+    name: Southwest University
+    alt: Southwest University logo
+    role: "GPA: 3.93/5; Top 10%. Pursuing a bachelor's degree in Management at the College of Business and Trade."
+    description: "Courses: Database Applications, Python for Data Analysis and Programming, Web Front-End Development, and Data Structures and Algorithms."
+members:
+  wuqi: Qi Wu
+  xiaoruihang: Ruihang Xiao
+projects:
+  campusx:
+    title: CampusX - Campus Secondhand Marketplace
+    alt: CampusX WeChat mini program screenshots
+    description: 'As product lead, guided the project from zero to launch, covering surveys, requirements documentation, prototyping, interface development, user testing, and iteration. The mini program is now live: search for "校易通CampusX" in WeChat to try it.'
+  tetris:
+    title: New Tetris Game
+    alt: New Tetris game screenshots
+    description: "A Tetris game built with Pygame, featuring account registration and login, leaderboards, endless and timed modes, local multiplayer, and AI opponents."
+awards:
+  national: { title: National Scholarship, description: National-level academic honor }
+  scholarship: { title: Southwest University First-Class Scholarship, description: University scholarship }
+  student: { title: Southwest University Outstanding Student Award, description: Recognition for all-round achievement }
+  lanqiao: { title: "Lanqiao Cup, C++ Track - Chongqing Second Prize", description: Programming competition }
+services:
+  entrepreneurship:
+    title: Head of the Innovation & Entrepreneurship Department, Southwest University
+    description: Helped organize innovation and entrepreneurship activities and supported student project collaboration and development.
+  class_assistant:
+    title: Class Assistant, Management Science and Engineering (Class of 2024)
+    description: Helped first-year students settle into university life and supported class communication and administration.
+  volunteer:
+    title: Class Volunteer Coordinator
+    description: Coordinated volunteering opportunities and activities and supported class affairs.
+skills:
+  product:
+    title: Product Design
+    description: Use Figma and requirements documents to turn business needs into structured product solutions and support implementation.
+    tags: [Figma, PRD, Prototyping]
+  ai:
+    title: AI Tools
+    description: Use Cursor, Codex, and other AI tools to build automation systems and WeChat mini programs through vibe coding.
+    tags: [Cursor, Codex, ChatGPT]
+  development:
+    title: Development
+    description: Work with HTML, CSS, JavaScript, and Python to turn ideas into interactive demos, validate features, and write automation scripts.
+    tags: [JavaScript, Python, Automation]
+  data:
+    title: Data Analysis
+    description: Use Python and SQL to clean, analyze, and visualize data to support business decisions and improvements.
+    tags: [pandas, numpy, SQL]
+  english:
+    title: English Communication
+    description: Four months of study abroad, a TOEFL score of 95, and a CET-6 score of 619. Comfortable communicating and working in English.
+    tags: [TOEFL 95, CET-6 619, English]
+  collaboration:
+    title: Collaboration
+    description: Work across business and development teams to move projects forward and turn feedback into improvements.
+    tags: [Cross-functional, Project Delivery, Feedback]

@@ -1,0 +1,62 @@
+news:
+  - { id: campusx_launch, date: "2026.09", icon: "🎉🎉" }
+  - { id: geekdance, date: "2026.07", icon: "🚀🚀" }
+  - { id: investment_milestone, date: "2026.06", icon: "🌟🌟" }
+  - { id: campusx_mvp, date: "2026.05", icon: "📱📱" }
+  - { id: investment_start, date: "2026.04", icon: "📈📈" }
+  - { id: teaching, date: "2026.03", icon: "🧑‍🏫🧑‍🏫" }
+  - { id: tutoring, date: "2026.01", icon: "💼💼" }
+  - { id: ucsd, date: "2025.09", icon: "🌎🌎" }
+  - { id: automation, date: "2025.08", icon: "🤖🤖" }
+  - { id: first_internship, date: "2025.07", icon: "💻💻" }
+  - { id: tetris, date: "2025.02", icon: "🎮🎮" }
+  - { id: relationship, date: "2024.06", icon: "❤️❤️" }
+  - { id: university, date: "2023.09", icon: "🌱🌱" }
+
+experiences:
+  - id: geekdance
+    image: /images/GeekDance.png
+    start: "2026.07"
+  - id: ucsd
+    image: /images/ucsd.jpg
+    start: "2025.09"
+    end: "2025.12"
+    video: "https://www.bilibili.com/video/BV1dBt767EL7/?spm_id_from=333.1387.homepage.video_card.click&vd_source=85357a67d62d4b23c00a40a3daea66fd"
+  - id: jojo
+    image: /images/JOJO.jpg
+    start: "2025.07"
+    end: "2025.09"
+  - id: swu
+    image: /images/swu.png
+    start: "2023.09"
+
+members:
+  wuqi: "https://github.com/W1uSeven7"
+  xiaoruihang: "https://github.com/xiaoxiaoyuweixie"
+
+projects:
+  - id: campusx
+    image: /images/CampusX.png
+    members: [wuqi, xiaoruihang]
+    links:
+      - label: prototype
+        url: "https://www.figma.com/design/ypmVzm832Ho7LpKxfyzsnO/Campusx%E5%8E%9F%E5%9E%8B?t=mW0eME4PG2sSAFbx-0"
+  - id: tetris
+    image: /images/Tetirs.png
+    members: [wuqi]
+    links:
+      - label: code
+        url: "http://github.com/W1uSeven7/New-Tetris"
+
+awards:
+  - { id: national, date: "2024.12", icon: "🏆", highlight: true }
+  - { id: scholarship, date: "2025.12", icon: "⭐" }
+  - { id: student, date: "2025.12", icon: "🎖️" }
+  - { id: lanqiao, date: "2025.04", icon: "💻" }
+
+services:
+  - { id: entrepreneurship, start: "2024.09", end: "2025.09" }
+  - { id: class_assistant, start: "2024.09", end: "2025.09" }
+  - { id: volunteer, start: "2023.09", end: "2024.09" }
+
+skills: [product, ai, development, data, english, collaboration]

@@ -171,3 +171,138 @@ body {
     transform: translateX(50px);
   }
 }
+
+/* Keep language links outside the collapsible navigation. */
+.masthead__inner-wrap {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.masthead__menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 44px;
+}
+
+.masthead .greedy-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.language-switch {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 2px;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 0 4px;
+    color: #7a8288;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &[aria-current="true"] {
+      color: #ca6f6f;
+      border-bottom-color: currentColor;
+    }
+
+    &:hover {
+      color: #ca6f6f;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  span {
+    color: #e8edf3;
+  }
+}
+
+.language-switch a:focus-visible,
+.greedy-nav .nav-toggle:focus-visible,
+.greedy-nav a:focus-visible {
+  outline: 2px solid #83a1c7;
+  outline-offset: 2px;
+}
+
+.greedy-nav .nav-toggle {
+  top: 0;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  color: #7a8288;
+
+  .navicon {
+    display: block;
+  }
+
+  .navicon,
+  .navicon:before,
+  .navicon:after {
+    background: currentColor;
+  }
+
+  &.close .navicon {
+    background: transparent;
+  }
+}
+
+.greedy-nav .hidden-links {
+  width: max-content;
+  max-width: 100%;
+
+  a {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 1023px) {
+  .masthead__menu {
+    gap: 8px;
+  }
+
+  .masthead__menu-item--lg {
+    padding-right: 0.5rem;
+  }
+}
+
+.no-js {
+  .masthead {
+    position: static;
+    height: auto;
+  }
+
+  .masthead__menu {
+    flex-wrap: wrap;
+  }
+
+  .greedy-nav {
+    flex-basis: 100%;
+    order: 2;
+  }
+
+  .greedy-nav .visible-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .masthead__menu-item--lg {
+    padding-right: 1rem;
+  }
+
+  .masthead__menu-item--lg > a {
+    transform: none;
+  }
+}

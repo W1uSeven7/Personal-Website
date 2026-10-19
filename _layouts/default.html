@@ -3,9 +3,10 @@ layout: compress
 ---
 
 {% include base_path %}
+{% include i18n.html %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{% if page.language %}{{ site_i18n.lang }}{% else %}{{ page.lang | default: site.locale | default: 'en' }}{% endif %}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}

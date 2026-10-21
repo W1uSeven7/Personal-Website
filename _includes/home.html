@@ -55,7 +55,7 @@
       <br>
       <b><i style="color:#83a1c7;">{{ site_i18n.ui.project | escape }} &nbsp;</i></b>
       {% for link in item.links %}
-      <a href="{{ link.url | escape }}"><em>[{{ site_i18n.ui[link.label] | escape }}]</em></a>
+      <a href="{{ link.url | escape }}"{% if link.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}><em>[{{ site_i18n.ui[link.label] | escape }}]</em></a>
       {% endfor %}
     </div>
   </div>

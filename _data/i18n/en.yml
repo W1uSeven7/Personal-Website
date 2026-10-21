@@ -30,6 +30,7 @@ ui:
   present: Present
   members: "Team:"
   project: Project
+  demo: Watch Demo
   prototype: Prototype
   code: code
   video: Speech video

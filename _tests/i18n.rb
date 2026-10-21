@@ -84,7 +84,13 @@ translations.each do |language, text|
   check.call(doc.at_css(".author__name").text == text.dig("author", "name"), "#{label}: author name is not localized")
   check.call(doc.at_css(".js-copy-email")["data-copied-label"] == text.dig("ui", "copied"), "#{label}: copy feedback is not localized")
   check.call(doc.css("a[href]").none? { |a| a["href"].include?("github.com/xiaoxiaoyuweixie/CampusX") }, "#{label}: private CampusX code link restored")
-  check.call(doc.at_css(".project-card").css("a").any? { |a| a.text == "[#{text.dig('ui', 'prototype')}]" }, "#{label}: prototype link missing")
+  campusx = doc.at_css(".project-card")
+  demo = campusx.at_css('a[href="https://www.bilibili.com/video/BV1Nznz6kEhn/"]')
+  check.call(demo && demo.text == "[#{text.dig('ui', 'demo')}]", "#{label}: demo link missing or not localized")
+  check.call(demo && demo["target"] == "_blank" && %w[noopener noreferrer].all? { |value| demo["rel"].to_s.split.include?(value) }, "#{label}: demo must open securely in a new tab")
+  project_actions = campusx.css("a").select { |a| a.at_css("em") }.map(&:text)
+  expected_actions = %w[demo prototype].map { |key| "[#{text.dig('ui', key)}]" }
+  check.call(project_actions == expected_actions, "#{label}: CampusX actions must be demo followed by prototype")
 
   if language == "en"
     doc.css("script, style, .language-switch").remove

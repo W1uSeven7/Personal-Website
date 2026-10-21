@@ -39,6 +39,9 @@ projects:
     image: /images/CampusX.png
     members: [wuqi, xiaoruihang]
     links:
+      - label: demo
+        url: "https://www.bilibili.com/video/BV1Nznz6kEhn/"
+        new_tab: true
       - label: prototype
         url: "https://www.figma.com/design/ypmVzm832Ho7LpKxfyzsnO/Campusx%E5%8E%9F%E5%9E%8B?t=mW0eME4PG2sSAFbx-0"
   - id: tetris
